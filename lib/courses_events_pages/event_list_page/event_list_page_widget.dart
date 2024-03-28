@@ -48,7 +48,7 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
         parameters: {'screen_name': 'eventListPage'});
     _model.tabBarController = TabController(
       vsync: this,
-      length: 3,
+      length: 2,
       initialIndex: 0,
     )..addListener(() => setState(() {}));
     setupAnimations(
@@ -132,7 +132,7 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                       12.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      '2dlyc6zn' /* CultureWise */,
+                                      '2dlyc6zn' /* BecomeGreat */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .headlineMedium
@@ -140,6 +140,7 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                           fontFamily: 'Sora',
                                           color:
                                               FlutterFlowTheme.of(context).info,
+                                          fontSize: 30.0,
                                         ),
                                   ),
                                 ),
@@ -280,7 +281,7 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                 'EVENT_LIST_PAGE_PAGE_Row_0u8b6rry_ON_TAP');
                             logFirebaseEvent('Row_navigate_to');
 
-                            context.pushNamed('homePage');
+                            context.pushNamed('yearWrapupPageCopy');
                           },
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -348,7 +349,7 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                 'EVENT_LIST_PAGE_PAGE_Row_4x8ap6nb_ON_TAP');
                             logFirebaseEvent('Row_navigate_to');
 
-                            context.pushNamed('chat_ai_Screen');
+                            context.pushNamed('homePage');
                           },
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -1055,32 +1056,24 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                         tabs: [
                           Tab(
                             text: FFLocalizations.of(context).getText(
-                              'ku32ubsw' /* Homes */,
+                              'ku32ubsw' /* Events */,
                             ),
                             icon: const Icon(
-                              Icons.home_filled,
+                              Icons.event_sharp,
                             ),
                           ),
                           Tab(
                             text: FFLocalizations.of(context).getText(
-                              'm18tbrxe' /* Beachfront */,
+                              'm18tbrxe' /* Courses */,
                             ),
                             icon: const Icon(
-                              Icons.beach_access_rounded,
-                            ),
-                          ),
-                          Tab(
-                            text: FFLocalizations.of(context).getText(
-                              'zmts7oks' /* Nature */,
-                            ),
-                            icon: const Icon(
-                              Icons.nature_people,
+                              Icons.school_outlined,
                             ),
                           ),
                         ],
                         controller: _model.tabBarController,
                         onTap: (i) async {
-                          [() async {}, () async {}, () async {}][i]();
+                          [() async {}, () async {}][i]();
                         },
                       ),
                     ),
@@ -1132,8 +1125,8 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           16.0),
-                                                  child: Image.network(
-                                                    'https://source.unsplash.com/random/1280x720?beach&9',
+                                                  child: Image.asset(
+                                                    'assets/images/DALLE_2024-03-26_19.12.56_-_A_tranquil_and_luxurious_mountain_resort_in_Aspen,_Colorado,_set_against_a_backdrop_of_lush_forests_and_the_Rocky_Mountains,_with_leaders_gathered_in_.webp',
                                                     width: double.infinity,
                                                     height: 230.0,
                                                     fit: BoxFit.cover,
@@ -1155,7 +1148,7 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        'sxaoiaqm' /* Maidstone, San Antonio, Tx. */,
+                                                        'sxaoiaqm' /* Leadership Mastery Retreat */,
                                                       ),
                                                       style:
                                                           FlutterFlowTheme.of(
@@ -1174,7 +1167,7 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                          '7tfjw41w' /* $210/night */,
+                                                          '7tfjw41w' /* $210 */,
                                                         ),
                                                         style:
                                                             FlutterFlowTheme.of(
@@ -1201,7 +1194,7 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                          'o9v85c96' /* 32 miles away */,
+                                                          'o9v85c96' /* 32 km away */,
                                                         ),
                                                         style:
                                                             FlutterFlowTheme.of(
@@ -1266,8 +1259,8 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                               child: ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(16.0),
-                                                child: Image.network(
-                                                  'https://source.unsplash.com/random/1280x720?beach&5',
+                                                child: Image.asset(
+                                                  'assets/images/DALLE_2024-03-26_19.12.57_-_A_modern_glass_building_with_a_sustainable_design_in_the_heart_of_Londons_Green_Enterprise_District,_filled_with_leaders_attending_a_symposium,_featu.webp',
                                                   width: double.infinity,
                                                   height: 230.0,
                                                   fit: BoxFit.cover,
@@ -1287,7 +1280,7 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                                   Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      '19yunl76' /* Maidstone, San Antonio, Tx. */,
+                                                      '19yunl76' /* Innovation and Culture Symposi... */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -1302,7 +1295,7 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        'izb0go7p' /* $210/night */,
+                                                        'izb0go7p' /* $210 */,
                                                       ),
                                                       style:
                                                           FlutterFlowTheme.of(
@@ -1328,7 +1321,7 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        'qp1blz3p' /* 32 miles away */,
+                                                        'qp1blz3p' /* 48 km away */,
                                                       ),
                                                       style:
                                                           FlutterFlowTheme.of(
@@ -1416,8 +1409,8 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           16.0),
-                                                  child: Image.network(
-                                                    'https://source.unsplash.com/random/1280x720?beach&4',
+                                                  child: Image.asset(
+                                                    'assets/images/DALLE_2024-03-26_19.21.24_-_A_serene_outdoor_setting_in_a_lush_garden_intended_for_a_mindfulness_and_leadership_meditation_course,_with_comfortable_seating_arranged_in_a_circle_a.webp',
                                                     width: double.infinity,
                                                     height: 230.0,
                                                     fit: BoxFit.cover,
@@ -1439,7 +1432,7 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        '1zyyys5p' /* Maidstone, San Antonio, Tx. */,
+                                                        '1zyyys5p' /* Mindful Leadership Mastery */,
                                                       ),
                                                       style:
                                                           FlutterFlowTheme.of(
@@ -1458,7 +1451,7 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                          'ei8f9wq3' /* $210/night */,
+                                                          'ei8f9wq3' /* $67,99 */,
                                                         ),
                                                         style:
                                                             FlutterFlowTheme.of(
@@ -1550,8 +1543,8 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                               child: ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(16.0),
-                                                child: Image.network(
-                                                  'https://source.unsplash.com/random/1280x720?beach',
+                                                child: Image.asset(
+                                                  'assets/images/072311ed-4994-41f3-965a-bd3a0f81121f.webp',
                                                   width: double.infinity,
                                                   height: 230.0,
                                                   fit: BoxFit.cover,
@@ -1571,7 +1564,7 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                                   Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      'm4jeuilu' /* Maidstone, San Antonio, Tx. */,
+                                                      'm4jeuilu' /* Strategic Innovation Workshop */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -1586,7 +1579,7 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        '1ggm5rz3' /* $210/night */,
+                                                        '1ggm5rz3' /* $136,89 */,
                                                       ),
                                                       style:
                                                           FlutterFlowTheme.of(
@@ -1630,264 +1623,6 @@ class _EventListPageWidgetState extends State<EventListPageWidget>
                                                               context)
                                                           .getText(
                                                         '833nx40a' /* 4.25 */,
-                                                      ),
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelMedium,
-                                                    ),
-                                                  ),
-                                                  Icon(
-                                                    Icons.star_rounded,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .secondaryText,
-                                                    size: 24.0,
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                          SingleChildScrollView(
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                ListView(
-                                  padding: EdgeInsets.zero,
-                                  shrinkWrap: true,
-                                  scrollDirection: Axis.vertical,
-                                  children: [
-                                    Container(
-                                      width: double.infinity,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
-                                      ),
-                                      child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 12.0),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      16.0, 8.0, 16.0, 12.0),
-                                              child: ClipRRect(
-                                                borderRadius:
-                                                    BorderRadius.circular(16.0),
-                                                child: Image.network(
-                                                  'https://source.unsplash.com/random/1280x720?beach&7',
-                                                  width: double.infinity,
-                                                  height: 230.0,
-                                                  fit: BoxFit.cover,
-                                                ),
-                                              ),
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      16.0, 0.0, 16.0, 4.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: [
-                                                  Text(
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                      'v57vw14f' /* Maidstone, San Antonio, Tx. */,
-                                                    ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyLarge,
-                                                  ),
-                                                  Padding(
-                                                    padding:
-                                                        const EdgeInsetsDirectional
-                                                            .fromSTEB(16.0, 0.0,
-                                                                0.0, 0.0),
-                                                    child: Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'oqiwghp4' /* $210/night */,
-                                                      ),
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .titleLarge,
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      16.0, 0.0, 16.0, 4.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: [
-                                                  Expanded(
-                                                    child: Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'opfe2qb5' /* 32 miles away */,
-                                                      ),
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelMedium,
-                                                    ),
-                                                  ),
-                                                  Padding(
-                                                    padding:
-                                                        const EdgeInsetsDirectional
-                                                            .fromSTEB(16.0, 4.0,
-                                                                4.0, 0.0),
-                                                    child: Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        '076sfzaw' /* 4.25 */,
-                                                      ),
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelMedium,
-                                                    ),
-                                                  ),
-                                                  Icon(
-                                                    Icons.star_rounded,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .secondaryText,
-                                                    size: 24.0,
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    Container(
-                                      width: double.infinity,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
-                                      ),
-                                      child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 12.0),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      16.0, 8.0, 16.0, 12.0),
-                                              child: ClipRRect(
-                                                borderRadius:
-                                                    BorderRadius.circular(16.0),
-                                                child: Image.network(
-                                                  'https://source.unsplash.com/random/1280x720?beach&9',
-                                                  width: double.infinity,
-                                                  height: 230.0,
-                                                  fit: BoxFit.cover,
-                                                ),
-                                              ),
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      16.0, 0.0, 16.0, 4.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: [
-                                                  Text(
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                      'mji03av1' /* Maidstone, San Antonio, Tx. */,
-                                                    ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyLarge,
-                                                  ),
-                                                  Padding(
-                                                    padding:
-                                                        const EdgeInsetsDirectional
-                                                            .fromSTEB(16.0, 0.0,
-                                                                0.0, 0.0),
-                                                    child: Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'c9e4kmza' /* $210/night */,
-                                                      ),
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .titleLarge,
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      16.0, 0.0, 16.0, 4.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: [
-                                                  Expanded(
-                                                    child: Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        '8z511oi7' /* 32 miles away */,
-                                                      ),
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelMedium,
-                                                    ),
-                                                  ),
-                                                  Padding(
-                                                    padding:
-                                                        const EdgeInsetsDirectional
-                                                            .fromSTEB(16.0, 4.0,
-                                                                4.0, 0.0),
-                                                    child: Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'kxl1loy4' /* 4.25 */,
                                                       ),
                                                       style:
                                                           FlutterFlowTheme.of(

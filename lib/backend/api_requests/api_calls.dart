@@ -63,6 +63,40 @@ class SendFullPromptCall {
 
 /// End OpenAI ChatGPT Group Code
 
+class BecomeGreatAssistantCall {
+  static Future<ApiCallResponse> call({
+    String? message = 'Hello',
+  }) async {
+    return ApiManager.instance.makeApiCall(
+      callName: 'BecomeGreat Assistant',
+      apiUrl:
+          'https://openai-assistant-api-nrfgbr3ria-ez.a.run.app/openai_assistant',
+      callType: ApiCallType.POST,
+      headers: {},
+      params: {
+        'assistant_id': "asst_OjY9E3YvAOQffZOzZRgJMEx7",
+        'thread_id': "thread_HPjt9EAqAun2jeVYCQ42WeCG",
+        'message': message,
+      },
+      bodyType: BodyType.X_WWW_FORM_URL_ENCODED,
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      alwaysAllowBody: false,
+    );
+  }
+
+  static String? response(dynamic response) => castToType<String>(getJsonField(
+        response,
+        r'''$.response''',
+      ));
+  static String? threadid(dynamic response) => castToType<String>(getJsonField(
+        response,
+        r'''$.thread_id''',
+      ));
+}
+
 class ApiPagingParams {
   int nextPageNumber = 0;
   int numItems = 0;

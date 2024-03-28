@@ -122,6 +122,8 @@ final parametersBuilderMap =
   'quiz2': ParameterData.none(),
   'scoreBoardPage': ParameterData.none(),
   'quiz2Copy': ParameterData.none(),
+  'yearWrapupPageCopy': ParameterData.none(),
+  'chat_ai_Screen_1': ParameterData.none(),
 };
 
 Map<String, dynamic> getInitialParameterData(Map<String, dynamic> data) {

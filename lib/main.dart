@@ -85,7 +85,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'CultureWise',
+      title: 'BecomeGreat',
       localizationsDelegates: const [
         FFLocalizationsDelegate(),
         GlobalMaterialLocalizations.delegate,
@@ -96,6 +96,7 @@ class _MyAppState extends State<MyApp> {
       supportedLocales: const [
         Locale('en'),
         Locale('nl'),
+        Locale('es'),
       ],
       theme: ThemeData(
         brightness: Brightness.light,

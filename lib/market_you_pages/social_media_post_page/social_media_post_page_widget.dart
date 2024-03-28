@@ -129,7 +129,7 @@ class _SocialMediaPostPageWidgetState extends State<SocialMediaPostPageWidget>
                                       12.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'fio5oafe' /* CultureWise */,
+                                      'fio5oafe' /* BecomeGreat */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .headlineMedium
@@ -137,6 +137,7 @@ class _SocialMediaPostPageWidgetState extends State<SocialMediaPostPageWidget>
                                           fontFamily: 'Sora',
                                           color:
                                               FlutterFlowTheme.of(context).info,
+                                          fontSize: 30.0,
                                         ),
                                   ),
                                 ),
@@ -277,7 +278,7 @@ class _SocialMediaPostPageWidgetState extends State<SocialMediaPostPageWidget>
                                 'SOCIAL_MEDIA_POST_Row_fazfuq6y_ON_TAP');
                             logFirebaseEvent('Row_navigate_to');
 
-                            context.pushNamed('homePage');
+                            context.pushNamed('yearWrapupPageCopy');
                           },
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -345,7 +346,7 @@ class _SocialMediaPostPageWidgetState extends State<SocialMediaPostPageWidget>
                                 'SOCIAL_MEDIA_POST_Row_n450kifs_ON_TAP');
                             logFirebaseEvent('Row_navigate_to');
 
-                            context.pushNamed('chat_ai_Screen');
+                            context.pushNamed('homePage');
                           },
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -1043,66 +1044,23 @@ class _SocialMediaPostPageWidgetState extends State<SocialMediaPostPageWidget>
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
-                      child: Container(
-                        width: 80.0,
-                        height: 80.0,
-                        decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                            colors: [
-                              FlutterFlowTheme.of(context).primary,
-                              FlutterFlowTheme.of(context).tertiary
-                            ],
-                            stops: const [0.0, 1.0],
-                            begin: const AlignmentDirectional(1.0, -1.0),
-                            end: const AlignmentDirectional(-1.0, 1.0),
-                          ),
-                          shape: BoxShape.circle,
-                        ),
-                        child: Align(
-                          alignment: const AlignmentDirectional(0.0, 0.0),
-                          child: Padding(
-                            padding: const EdgeInsets.all(4.0),
-                            child: Container(
-                              width: 100.0,
-                              height: 100.0,
-                              decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
-                                    .primaryBackground,
-                                shape: BoxShape.circle,
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.all(4.0),
-                                child: AuthUserStreamWidget(
-                                  builder: (context) => ClipRRect(
-                                    borderRadius: BorderRadius.circular(50.0),
-                                    child: Image.network(
-                                      currentUserPhoto,
-                                      width: 100.0,
-                                      height: 100.0,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
                     Expanded(
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          AuthUserStreamWidget(
-                            builder: (context) => Text(
-                              currentUserDisplayName,
-                              textAlign: TextAlign.center,
-                              style: FlutterFlowTheme.of(context).headlineSmall,
+                          Text(
+                            FFLocalizations.of(context).getText(
+                              '66nvq6a9' /* MarketYou */,
                             ),
+                            textAlign: TextAlign.center,
+                            style: FlutterFlowTheme.of(context)
+                                .headlineSmall
+                                .override(
+                                  fontFamily: 'Sora',
+                                  color: FlutterFlowTheme.of(context)
+                                      .primaryBackground,
+                                ),
                           ),
                           Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
@@ -1169,7 +1127,7 @@ class _SocialMediaPostPageWidgetState extends State<SocialMediaPostPageWidget>
                                       0.0, 0.0, 0.0, 8.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      '65tv6blk' /* Activity */,
+                                      '65tv6blk' /* Become Great Progress Posts */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .headlineMedium,
@@ -1187,137 +1145,11 @@ class _SocialMediaPostPageWidgetState extends State<SocialMediaPostPageWidget>
                                       0.0, 8.0, 0.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      '6k8jpayr' /* I exist to design pixels, beyo... */,
+                                      '6k8jpayr' /* Want to share your progress in... */,
                                     ),
                                     textAlign: TextAlign.start,
                                     style:
                                         FlutterFlowTheme.of(context).labelLarge,
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 12.0, 0.0, 12.0),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.max,
-                                    children: [
-                                      Expanded(
-                                        child: Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 12.0, 0.0),
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.max,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        0.0, 0.0, 0.0, 8.0),
-                                                child: Text(
-                                                  FFLocalizations.of(context)
-                                                      .getText(
-                                                    'e69g0eln' /* 152 */,
-                                                  ),
-                                                  textAlign: TextAlign.center,
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .displaySmall,
-                                                ),
-                                              ),
-                                              Text(
-                                                FFLocalizations.of(context)
-                                                    .getText(
-                                                  'gsvmgj5h' /* Trips */,
-                                                ),
-                                                textAlign: TextAlign.center,
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium,
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                      Expanded(
-                                        child: Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 12.0, 0.0),
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.max,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        0.0, 0.0, 0.0, 8.0),
-                                                child: Text(
-                                                  FFLocalizations.of(context)
-                                                      .getText(
-                                                    '6bjcbyxb' /* 24k */,
-                                                  ),
-                                                  textAlign: TextAlign.center,
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .displaySmall,
-                                                ),
-                                              ),
-                                              Text(
-                                                FFLocalizations.of(context)
-                                                    .getText(
-                                                  'pxpzd6ct' /* Points */,
-                                                ),
-                                                textAlign: TextAlign.center,
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium,
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                      Expanded(
-                                        child: Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 12.0, 0.0),
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.max,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        0.0, 0.0, 0.0, 8.0),
-                                                child: Text(
-                                                  FFLocalizations.of(context)
-                                                      .getText(
-                                                    'umggvmol' /* 240 */,
-                                                  ),
-                                                  textAlign: TextAlign.center,
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .displaySmall,
-                                                ),
-                                              ),
-                                              Text(
-                                                FFLocalizations.of(context)
-                                                    .getText(
-                                                  'isrpl5hx' /* Friends */,
-                                                ),
-                                                textAlign: TextAlign.center,
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium,
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                    ],
                                   ),
                                 ),
                                 Divider(
@@ -1403,54 +1235,14 @@ class _SocialMediaPostPageWidgetState extends State<SocialMediaPostPageWidget>
                                                             CrossAxisAlignment
                                                                 .start,
                                                         children: [
-                                                          Text(
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                              'ur7k6400' /* Andrew Daniels */,
-                                                            ),
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyLarge,
-                                                          ),
-                                                          RichText(
-                                                            textScaler:
-                                                                MediaQuery.of(
-                                                                        context)
-                                                                    .textScaler,
-                                                            text: TextSpan(
-                                                              children: [
-                                                                TextSpan(
-                                                                  text: FFLocalizations.of(
-                                                                          context)
-                                                                      .getText(
-                                                                    'l0q7dmkm' /* @username */,
-                                                                  ),
-                                                                  style:
-                                                                      const TextStyle(),
-                                                                ),
-                                                                TextSpan(
-                                                                  text: FFLocalizations.of(
-                                                                          context)
-                                                                      .getText(
-                                                                    'hiovk94h' /*  •  */,
-                                                                  ),
-                                                                  style:
-                                                                      const TextStyle(),
-                                                                ),
-                                                                TextSpan(
-                                                                  text: FFLocalizations.of(
-                                                                          context)
-                                                                      .getText(
-                                                                    'tk2ffvtc' /* 4 mins ago */,
-                                                                  ),
-                                                                  style:
-                                                                      const TextStyle(),
-                                                                )
-                                                              ],
+                                                          AuthUserStreamWidget(
+                                                            builder:
+                                                                (context) =>
+                                                                    Text(
+                                                              currentUserDisplayName,
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .labelSmall,
+                                                                  .bodyLarge,
                                                             ),
                                                           ),
                                                         ],
@@ -1481,7 +1273,7 @@ class _SocialMediaPostPageWidgetState extends State<SocialMediaPostPageWidget>
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                          'dnrf0ij2' /* Lorem ipsum dolor sit amet, co... */,
+                                                          'dnrf0ij2' /* Last month, we embraced the #G... */,
                                                         ),
                                                         style:
                                                             FlutterFlowTheme.of(
@@ -1493,8 +1285,8 @@ class _SocialMediaPostPageWidgetState extends State<SocialMediaPostPageWidget>
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               12.0),
-                                                      child: Image.network(
-                                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/flutter-flow-u-i-4dyo6d/assets/s58xwcf2zd15/Dribbble_proposeai_2@2x.jpg',
+                                                      child: Image.asset(
+                                                        'assets/images/3c96f643-c68e-4c5a-8def-b9a9dac5ed28.jpg',
                                                         width: double.infinity,
                                                         height: 250.0,
                                                         fit: BoxFit.cover,
@@ -1663,13 +1455,39 @@ class _SocialMediaPostPageWidgetState extends State<SocialMediaPostPageWidget>
                                                                       const EdgeInsets
                                                                           .all(
                                                                               8.0),
-                                                                  child: Icon(
-                                                                    Icons
-                                                                        .ios_share,
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .secondaryText,
-                                                                    size: 24.0,
+                                                                  child:
+                                                                      InkWell(
+                                                                    splashColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    focusColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    hoverColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    highlightColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    onTap:
+                                                                        () async {
+                                                                      logFirebaseEvent(
+                                                                          'SOCIAL_MEDIA_POST_Icon_mdwz6r6r_ON_TAP');
+                                                                      logFirebaseEvent(
+                                                                          'Icon_navigate_to');
+
+                                                                      context.pushNamed(
+                                                                          'createSocialPostPage');
+                                                                    },
+                                                                    child: Icon(
+                                                                      Icons
+                                                                          .ios_share,
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .secondaryText,
+                                                                      size:
+                                                                          24.0,
+                                                                    ),
                                                                   ),
                                                                 ),
                                                               ],
@@ -1719,17 +1537,22 @@ class _SocialMediaPostPageWidgetState extends State<SocialMediaPostPageWidget>
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.center,
                                                   children: [
-                                                    Container(
-                                                      width: 50.0,
-                                                      height: 50.0,
-                                                      clipBehavior:
-                                                          Clip.antiAlias,
-                                                      decoration: const BoxDecoration(
-                                                        shape: BoxShape.circle,
-                                                      ),
-                                                      child: Image.network(
-                                                        'https://images.unsplash.com/photo-1654701473955-9aacc05202d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60',
-                                                        fit: BoxFit.cover,
+                                                    AuthUserStreamWidget(
+                                                      builder: (context) =>
+                                                          Container(
+                                                        width: 50.0,
+                                                        height: 50.0,
+                                                        clipBehavior:
+                                                            Clip.antiAlias,
+                                                        decoration:
+                                                            const BoxDecoration(
+                                                          shape:
+                                                              BoxShape.circle,
+                                                        ),
+                                                        child: Image.network(
+                                                          currentUserPhoto,
+                                                          fit: BoxFit.cover,
+                                                        ),
                                                       ),
                                                     ),
                                                     Padding(
@@ -1747,54 +1570,14 @@ class _SocialMediaPostPageWidgetState extends State<SocialMediaPostPageWidget>
                                                             CrossAxisAlignment
                                                                 .start,
                                                         children: [
-                                                          Text(
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                              'kw6ehxci' /* Andrew Daniels */,
-                                                            ),
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyLarge,
-                                                          ),
-                                                          RichText(
-                                                            textScaler:
-                                                                MediaQuery.of(
-                                                                        context)
-                                                                    .textScaler,
-                                                            text: TextSpan(
-                                                              children: [
-                                                                TextSpan(
-                                                                  text: FFLocalizations.of(
-                                                                          context)
-                                                                      .getText(
-                                                                    '4fvfedqk' /* @username */,
-                                                                  ),
-                                                                  style:
-                                                                      const TextStyle(),
-                                                                ),
-                                                                TextSpan(
-                                                                  text: FFLocalizations.of(
-                                                                          context)
-                                                                      .getText(
-                                                                    '38f4awz8' /*  •  */,
-                                                                  ),
-                                                                  style:
-                                                                      const TextStyle(),
-                                                                ),
-                                                                TextSpan(
-                                                                  text: FFLocalizations.of(
-                                                                          context)
-                                                                      .getText(
-                                                                    'grcje0ns' /* 4 mins ago */,
-                                                                  ),
-                                                                  style:
-                                                                      const TextStyle(),
-                                                                )
-                                                              ],
+                                                          AuthUserStreamWidget(
+                                                            builder:
+                                                                (context) =>
+                                                                    Text(
+                                                              currentUserDisplayName,
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .labelSmall,
+                                                                  .bodyLarge,
                                                             ),
                                                           ),
                                                         ],
@@ -1825,7 +1608,7 @@ class _SocialMediaPostPageWidgetState extends State<SocialMediaPostPageWidget>
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                          'd5w7uvk4' /* Lorem ipsum dolor sit amet, co... */,
+                                                          'd5w7uvk4' /* In just one month, we've turne... */,
                                                         ),
                                                         style:
                                                             FlutterFlowTheme.of(
@@ -1838,7 +1621,7 @@ class _SocialMediaPostPageWidgetState extends State<SocialMediaPostPageWidget>
                                                           BorderRadius.circular(
                                                               12.0),
                                                       child: Image.network(
-                                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/flutter-flow-u-i-4dyo6d/assets/s58xwcf2zd15/Dribbble_proposeai_2@2x.jpg',
+                                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/culture-wise-ldnp9w/assets/837lyrxw8gvc/77a738e2-515a-4150-b797-110690d62207.jpg',
                                                         width: double.infinity,
                                                         height: 250.0,
                                                         fit: BoxFit.cover,
@@ -2007,13 +1790,39 @@ class _SocialMediaPostPageWidgetState extends State<SocialMediaPostPageWidget>
                                                                       const EdgeInsets
                                                                           .all(
                                                                               8.0),
-                                                                  child: Icon(
-                                                                    Icons
-                                                                        .ios_share,
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .secondaryText,
-                                                                    size: 24.0,
+                                                                  child:
+                                                                      InkWell(
+                                                                    splashColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    focusColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    hoverColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    highlightColor:
+                                                                        Colors
+                                                                            .transparent,
+                                                                    onTap:
+                                                                        () async {
+                                                                      logFirebaseEvent(
+                                                                          'SOCIAL_MEDIA_POST_Icon_ua6jhgps_ON_TAP');
+                                                                      logFirebaseEvent(
+                                                                          'Icon_navigate_to');
+
+                                                                      context.pushNamed(
+                                                                          'createSocialPostPage');
+                                                                    },
+                                                                    child: Icon(
+                                                                      Icons
+                                                                          .ios_share,
+                                                                      color: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .secondaryText,
+                                                                      size:
+                                                                          24.0,
+                                                                    ),
                                                                   ),
                                                                 ),
                                                               ],

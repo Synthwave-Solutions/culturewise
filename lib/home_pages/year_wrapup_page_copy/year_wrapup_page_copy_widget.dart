@@ -1,5 +1,4 @@
 import '/auth/firebase_auth/auth_util.dart';
-import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -8,19 +7,20 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'score_board_page_model.dart';
-export 'score_board_page_model.dart';
+import 'year_wrapup_page_copy_model.dart';
+export 'year_wrapup_page_copy_model.dart';
 
-class ScoreBoardPageWidget extends StatefulWidget {
-  const ScoreBoardPageWidget({super.key});
+class YearWrapupPageCopyWidget extends StatefulWidget {
+  const YearWrapupPageCopyWidget({super.key});
 
   @override
-  State<ScoreBoardPageWidget> createState() => _ScoreBoardPageWidgetState();
+  State<YearWrapupPageCopyWidget> createState() =>
+      _YearWrapupPageCopyWidgetState();
 }
 
-class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
+class _YearWrapupPageCopyWidgetState extends State<YearWrapupPageCopyWidget>
     with TickerProviderStateMixin {
-  late ScoreBoardPageModel _model;
+  late YearWrapupPageCopyModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -43,10 +43,10 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ScoreBoardPageModel());
+    _model = createModel(context, () => YearWrapupPageCopyModel());
 
     logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'scoreBoardPage'});
+        parameters: {'screen_name': 'yearWrapupPageCopy'});
     setupAnimations(
       animationsMap.values.where((anim) =>
           anim.trigger == AnimationTrigger.onActionTrigger ||
@@ -72,14 +72,14 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: FlutterFlowTheme.of(context).primary,
         drawer: InkWell(
           splashColor: Colors.transparent,
           focusColor: Colors.transparent,
           hoverColor: Colors.transparent,
           highlightColor: Colors.transparent,
           onTap: () async {
-            logFirebaseEvent('SCORE_BOARD_Drawer_a5ar46cl_ON_TAP');
+            logFirebaseEvent('YEAR_WRAPUP_COPY_Drawer_vv9thmr7_ON_TAP');
             logFirebaseEvent('Drawer_close_dialog,_drawer,_etc');
             Navigator.pop(context);
           },
@@ -128,7 +128,7 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                                       12.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'aikb4p7l' /* BecomeGreat */,
+                                      'humtohgl' /* BecomeGreat */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .headlineMedium
@@ -230,7 +230,7 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                                   highlightColor: Colors.transparent,
                                   onTap: () async {
                                     logFirebaseEvent(
-                                        'SCORE_BOARD_Icon_idx8cqi7_ON_TAP');
+                                        'YEAR_WRAPUP_COPY_Icon_8ihcpjng_ON_TAP');
                                     logFirebaseEvent('Icon_navigate_to');
 
                                     context
@@ -273,7 +273,8 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            logFirebaseEvent('SCORE_BOARD_Row_i462zmfg_ON_TAP');
+                            logFirebaseEvent(
+                                'YEAR_WRAPUP_COPY_Row_9q4m2vhm_ON_TAP');
                             logFirebaseEvent('Row_navigate_to');
 
                             context.pushNamed('yearWrapupPageCopy');
@@ -303,7 +304,7 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                                     12.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'q3rrbct7' /* Dashboard */,
+                                    'r2s8mdy4' /* Homepage */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .titleSmall
@@ -340,7 +341,8 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            logFirebaseEvent('SCORE_BOARD_Row_vsud8trq_ON_TAP');
+                            logFirebaseEvent(
+                                'YEAR_WRAPUP_COPY_Row_wouqjsyt_ON_TAP');
                             logFirebaseEvent('Row_navigate_to');
 
                             context.pushNamed('homePage');
@@ -370,7 +372,7 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                                     12.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'hhop7igl' /* Guru Chat */,
+                                    '92sbfvne' /* Guru Chat */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .labelMedium
@@ -407,7 +409,8 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            logFirebaseEvent('SCORE_BOARD_Row_iiqobv2r_ON_TAP');
+                            logFirebaseEvent(
+                                'YEAR_WRAPUP_COPY_Row_78sq7d6e_ON_TAP');
                             logFirebaseEvent('Row_navigate_to');
 
                             context.pushNamed('socialMediaPostPage');
@@ -437,7 +440,7 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                                     12.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'wes9zh2g' /* MarketYou */,
+                                    '672gsqxy' /* MarketYou */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .labelMedium
@@ -474,7 +477,8 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            logFirebaseEvent('SCORE_BOARD_Row_1udoj348_ON_TAP');
+                            logFirebaseEvent(
+                                'YEAR_WRAPUP_COPY_Row_vta0io4i_ON_TAP');
                             logFirebaseEvent('Row_navigate_to');
 
                             context.pushNamed('homePage3');
@@ -504,7 +508,7 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                                     12.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    '9w6zkdiv' /* Deep Insights */,
+                                    'o2rbii1g' /* Deep Insights */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .titleSmall
@@ -535,55 +539,42 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                       child: Padding(
                         padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 0.0, 12.0, 0.0),
-                        child: InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
-                          onTap: () async {
-                            logFirebaseEvent('SCORE_BOARD_Row_prdp3fs8_ON_TAP');
-                            logFirebaseEvent('Row_navigate_to');
-
-                            context.pushNamed('homePage2');
-                          },
-                          child: Row(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 12.0, 12.0, 12.0),
-                                child: Container(
-                                  width: 4.0,
-                                  height: 100.0,
-                                  decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.of(context).accent1,
-                                    borderRadius: BorderRadius.circular(12.0),
-                                  ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 12.0, 12.0, 12.0),
+                              child: Container(
+                                width: 4.0,
+                                height: 100.0,
+                                decoration: BoxDecoration(
+                                  color: FlutterFlowTheme.of(context).accent1,
+                                  borderRadius: BorderRadius.circular(12.0),
                                 ),
                               ),
-                              Icon(
-                                Icons.radar,
-                                color: FlutterFlowTheme.of(context).info,
-                                size: 28.0,
-                              ),
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    12.0, 0.0, 0.0, 0.0),
-                                child: Text(
-                                  FFLocalizations.of(context).getText(
-                                    'mwbe3136' /* Skill Development Plan */,
-                                  ),
-                                  style: FlutterFlowTheme.of(context)
-                                      .titleSmall
-                                      .override(
-                                        fontFamily: 'Inter',
-                                        color:
-                                            FlutterFlowTheme.of(context).info,
-                                      ),
+                            ),
+                            Icon(
+                              Icons.radar,
+                              color: FlutterFlowTheme.of(context).info,
+                              size: 28.0,
+                            ),
+                            Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  12.0, 0.0, 0.0, 0.0),
+                              child: Text(
+                                FFLocalizations.of(context).getText(
+                                  '3b6us4vt' /* Skill Development Plan */,
                                 ),
+                                style: FlutterFlowTheme.of(context)
+                                    .titleSmall
+                                    .override(
+                                      fontFamily: 'Inter',
+                                      color: FlutterFlowTheme.of(context).info,
+                                    ),
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
@@ -608,10 +599,11 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            logFirebaseEvent('SCORE_BOARD_Row_hyyh3hmq_ON_TAP');
+                            logFirebaseEvent(
+                                'YEAR_WRAPUP_COPY_Row_rhd1nm5d_ON_TAP');
                             logFirebaseEvent('Row_navigate_to');
 
-                            context.pushNamed('editProfilePage');
+                            context.pushNamed('eventListPage');
                           },
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -638,7 +630,7 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                                     12.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'fg7gezm6' /* Courses & Events */,
+                                    'cpdv8cmh' /* Courses & Events */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .titleSmall
@@ -675,7 +667,8 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            logFirebaseEvent('SCORE_BOARD_Row_5dp2q6p1_ON_TAP');
+                            logFirebaseEvent(
+                                'YEAR_WRAPUP_COPY_Row_74v3hbnd_ON_TAP');
                             logFirebaseEvent('Row_navigate_to');
 
                             context.pushNamed('scoreBoardPage');
@@ -705,7 +698,7 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                                     12.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    '8qxerdon' /* Scoreboard */,
+                                    'vvjt86eg' /* Scoreboard */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .titleSmall
@@ -742,10 +735,11 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            logFirebaseEvent('SCORE_BOARD_Row_diag4v8j_ON_TAP');
+                            logFirebaseEvent(
+                                'YEAR_WRAPUP_COPY_Row_ynfbwezh_ON_TAP');
                             logFirebaseEvent('Row_navigate_to');
 
-                            context.pushNamed('yearWrapupPage');
+                            context.pushNamed('yearWrapupPageCopy');
                           },
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -772,7 +766,7 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                                     12.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    '0y740rv1' /* Year Wrap-Up */,
+                                    'homnq9vj' /* Year Wrap-Up */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .titleSmall
@@ -798,7 +792,8 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                       hoverColor: Colors.transparent,
                       highlightColor: Colors.transparent,
                       onTap: () async {
-                        logFirebaseEvent('SCORE_BOARD_contentView_1_ON_TAP');
+                        logFirebaseEvent(
+                            'YEAR_WRAPUP_COPY_contentView_1_ON_TAP');
                         logFirebaseEvent('contentView_1_navigate_to');
 
                         context.pushNamed('settingsPage');
@@ -839,7 +834,7 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                                     12.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'uzef0r99' /* Settings */,
+                                    'lfqs9a1o' /* Settings */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .titleSmall
@@ -880,7 +875,7 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
                               highlightColor: Colors.transparent,
                               onTap: () async {
                                 logFirebaseEvent(
-                                    'SCORE_BOARD_lightDark_small_ON_TAP');
+                                    'YEAR_WRAPUP_COPY_lightDark_small_ON_TAP');
                                 if ((Theme.of(context).brightness ==
                                         Brightness.light) ==
                                     true) {
@@ -1013,7 +1008,7 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
               size: 30.0,
             ),
             onPressed: () async {
-              logFirebaseEvent('SCORE_BOARD_menu_sharp_ICN_ON_TAP');
+              logFirebaseEvent('YEAR_WRAPUP_COPY_menu_sharp_ICN_ON_TAP');
               logFirebaseEvent('IconButton_drawer');
               scaffoldKey.currentState!.openDrawer();
             },
@@ -1022,248 +1017,427 @@ class _ScoreBoardPageWidgetState extends State<ScoreBoardPageWidget>
           centerTitle: false,
           elevation: 0.0,
         ),
-        body: SafeArea(
-          top: true,
-          child: Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
-            child: Column(
-              mainAxisSize: MainAxisSize.max,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      FFLocalizations.of(context).getText(
-                        'zogas78t' /* Scoreboard */,
+        body: Align(
+          alignment: const AlignmentDirectional(0.0, 0.0),
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                    child: Container(
+                      width: 100.0,
+                      height: 100.0,
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          colors: [
+                            FlutterFlowTheme.of(context).primary,
+                            FlutterFlowTheme.of(context).tertiary
+                          ],
+                          stops: const [0.0, 1.0],
+                          begin: const AlignmentDirectional(1.0, -1.0),
+                          end: const AlignmentDirectional(-1.0, 1.0),
+                        ),
+                        shape: BoxShape.circle,
                       ),
-                      style:
-                          FlutterFlowTheme.of(context).headlineLarge.override(
-                                fontFamily: 'Sora',
-                                fontWeight: FontWeight.w600,
+                      child: Align(
+                        alignment: const AlignmentDirectional(0.0, 0.0),
+                        child: Padding(
+                          padding: const EdgeInsets.all(4.0),
+                          child: Container(
+                            width: 100.0,
+                            height: 100.0,
+                            decoration: BoxDecoration(
+                              color: FlutterFlowTheme.of(context).primaryText,
+                              shape: BoxShape.circle,
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.all(4.0),
+                              child: AuthUserStreamWidget(
+                                builder: (context) => ClipRRect(
+                                  borderRadius: BorderRadius.circular(50.0),
+                                  child: Image.network(
+                                    currentUserPhoto,
+                                    width: 100.0,
+                                    height: 100.0,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
                               ),
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        FFLocalizations.of(context).getText(
-                          '1jt0luvm' /* Within Organization */,
+                  ),
+                ],
+              ),
+              Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                child: AuthUserStreamWidget(
+                  builder: (context) => Text(
+                    currentUserDisplayName,
+                    textAlign: TextAlign.center,
+                    style: FlutterFlowTheme.of(context).headlineSmall.override(
+                          fontFamily: 'Sora',
+                          color:
+                              FlutterFlowTheme.of(context).secondaryBackground,
                         ),
-                        style: FlutterFlowTheme.of(context)
-                            .titleMedium
-                            .override(
-                              fontFamily: 'Inter',
-                              color: FlutterFlowTheme.of(context).primaryText,
-                              fontWeight: FontWeight.w500,
-                            ),
-                      ),
-                      StreamBuilder<List<UsersRecord>>(
-                        stream: queryUsersRecord(),
-                        builder: (context, snapshot) {
-                          // Customize what your widget looks like when it's loading.
-                          if (!snapshot.hasData) {
-                            return Center(
-                              child: SizedBox(
-                                width: 50.0,
-                                height: 50.0,
-                                child: CircularProgressIndicator(
-                                  valueColor: AlwaysStoppedAnimation<Color>(
-                                    FlutterFlowTheme.of(context).primary,
-                                  ),
-                                ),
-                              ),
-                            );
-                          }
-                          List<UsersRecord> columnUsersRecordList =
-                              snapshot.data!;
-                          return Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: List.generate(
-                                columnUsersRecordList.length, (columnIndex) {
-                              final columnUsersRecord =
-                                  columnUsersRecordList[columnIndex];
-                              return Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    8.0, 0.0, 8.0, 0.0),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    ClipRRect(
-                                      borderRadius: BorderRadius.circular(20.0),
-                                      child: Image.network(
-                                        columnUsersRecord.photoUrl,
-                                        width: 40.0,
-                                        height: 40.0,
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          8.0, 12.0, 8.0, 12.0),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Text(
-                                            columnUsersRecord.displayName,
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyLarge
-                                                .override(
-                                                  fontFamily: 'Inter',
-                                                  fontWeight: FontWeight.w500,
-                                                ),
-                                          ),
-                                          Text(
-                                            columnUsersRecord.email,
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodySmall,
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    Text(
-                                      FFLocalizations.of(context).getText(
-                                        'rll0c5px' /* Points: 100 */,
-                                      ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w500,
-                                          ),
-                                    ),
-                                  ],
-                                ),
-                              );
-                            }),
-                          );
-                        },
-                      ),
-                    ],
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        FFLocalizations.of(context).getText(
-                          'verxfg3v' /* Between Organizations */,
-                        ),
-                        style: FlutterFlowTheme.of(context)
-                            .titleMedium
-                            .override(
-                              fontFamily: 'Inter',
-                              color: FlutterFlowTheme.of(context).primaryText,
-                              fontWeight: FontWeight.w500,
-                            ),
+              ),
+              Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 24.0, 0.0),
+                child: Text(
+                  FFLocalizations.of(context).getText(
+                    'x4nnjwrr' /* Welcome to BecomeGreat! Your A... */,
+                  ),
+                  textAlign: TextAlign.center,
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Inter',
+                        color: FlutterFlowTheme.of(context).accent4,
                       ),
-                      StreamBuilder<List<UsersRecord>>(
-                        stream: queryUsersRecord(),
-                        builder: (context, snapshot) {
-                          // Customize what your widget looks like when it's loading.
-                          if (!snapshot.hasData) {
-                            return Center(
-                              child: SizedBox(
-                                width: 50.0,
-                                height: 50.0,
-                                child: CircularProgressIndicator(
-                                  valueColor: AlwaysStoppedAnimation<Color>(
-                                    FlutterFlowTheme.of(context).primary,
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 44.0, 0.0, 0.0),
+                  child: Container(
+                    width: double.infinity,
+                    height: 400.0,
+                    decoration: BoxDecoration(
+                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      boxShadow: const [
+                        BoxShadow(
+                          blurRadius: 3.0,
+                          color: Color(0x33000000),
+                          offset: Offset(0.0, -1.0),
+                        )
+                      ],
+                      borderRadius: const BorderRadius.only(
+                        bottomLeft: Radius.circular(0.0),
+                        bottomRight: Radius.circular(0.0),
+                        topLeft: Radius.circular(16.0),
+                        topRight: Radius.circular(16.0),
+                      ),
+                    ),
+                    child: SingleChildScrollView(
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Align(
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
+                                  child: Text(
+                                    FFLocalizations.of(context).getText(
+                                      'ad54y1ny' /* Quick Access */,
+                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .headlineMedium,
                                   ),
                                 ),
-                              ),
-                            );
-                          }
-                          List<UsersRecord> columnUsersRecordList =
-                              snapshot.data!;
-                          return Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: List.generate(
-                                columnUsersRecordList.length, (columnIndex) {
-                              final columnUsersRecord =
-                                  columnUsersRecordList[columnIndex];
-                              return Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    8.0, 0.0, 8.0, 0.0),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    ClipRRect(
-                                      borderRadius: BorderRadius.circular(20.0),
-                                      child: Image.network(
-                                        'https://images.unsplash.com/photo-1708804309492-5ef3f3458c33?w=\${userData.photo_url}&h=\${userData.photo_url}',
-                                        width: 40.0,
-                                        height: 40.0,
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          8.0, 12.0, 8.0, 12.0),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Text(
-                                            FFLocalizations.of(context).getText(
-                                              '8r2rg748' /* Great Place To Work */,
+                                Align(
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
+                                  child: Padding(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 16.0, 0.0, 0.0),
+                                    child: Wrap(
+                                      spacing: 16.0,
+                                      runSpacing: 16.0,
+                                      alignment: WrapAlignment.start,
+                                      crossAxisAlignment:
+                                          WrapCrossAlignment.start,
+                                      direction: Axis.horizontal,
+                                      runAlignment: WrapAlignment.start,
+                                      verticalDirection: VerticalDirection.down,
+                                      clipBehavior: Clip.none,
+                                      children: [
+                                        InkWell(
+                                          splashColor: Colors.transparent,
+                                          focusColor: Colors.transparent,
+                                          hoverColor: Colors.transparent,
+                                          highlightColor: Colors.transparent,
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'YEAR_WRAPUP_COPY_Container_mlwjcw5t_ON_T');
+                                            logFirebaseEvent(
+                                                'Container_navigate_to');
+
+                                            context.pushNamed('chat_ai_Screen');
+                                          },
+                                          child: Container(
+                                            width: MediaQuery.sizeOf(context)
+                                                    .width *
+                                                0.4,
+                                            height: 160.0,
+                                            decoration: BoxDecoration(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryBackground,
+                                              borderRadius:
+                                                  BorderRadius.circular(24.0),
                                             ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyLarge
-                                                .override(
-                                                  fontFamily: 'Inter',
-                                                  fontWeight: FontWeight.w500,
-                                                ),
-                                          ),
-                                          Text(
-                                            FFLocalizations.of(context).getText(
-                                              'wbgcp4kj' /* info@greatplacetowork.com */,
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(12.0),
+                                              child: Column(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: [
+                                                  Padding(
+                                                    padding:
+                                                        const EdgeInsetsDirectional
+                                                            .fromSTEB(0.0, 0.0,
+                                                                0.0, 10.0),
+                                                    child: FaIcon(
+                                                      FontAwesomeIcons.robot,
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primaryText,
+                                                      size: 44.0,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'iruk3hgd' /* Guru Chat */,
+                                                    ),
+                                                    textAlign: TextAlign.center,
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .labelSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          fontSize: 16.0,
+                                                        ),
+                                                  ),
+                                                ],
+                                              ),
                                             ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodySmall,
                                           ),
-                                        ],
-                                      ),
-                                    ),
-                                    Text(
-                                      FFLocalizations.of(context).getText(
-                                        'btuhhmsn' /* Points: 200 */,
-                                      ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Inter',
-                                            fontWeight: FontWeight.w500,
+                                        ),
+                                        InkWell(
+                                          splashColor: Colors.transparent,
+                                          focusColor: Colors.transparent,
+                                          hoverColor: Colors.transparent,
+                                          highlightColor: Colors.transparent,
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'YEAR_WRAPUP_COPY_Container_rhany562_ON_T');
+                                            logFirebaseEvent(
+                                                'Container_navigate_to');
+
+                                            context.pushNamed('homePage3');
+                                          },
+                                          child: Container(
+                                            width: MediaQuery.sizeOf(context)
+                                                    .width *
+                                                0.4,
+                                            height: 160.0,
+                                            decoration: BoxDecoration(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryBackground,
+                                              borderRadius:
+                                                  BorderRadius.circular(24.0),
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(12.0),
+                                              child: Column(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: [
+                                                  Padding(
+                                                    padding:
+                                                        const EdgeInsetsDirectional
+                                                            .fromSTEB(0.0, 0.0,
+                                                                0.0, 10.0),
+                                                    child: Icon(
+                                                      Icons.search_rounded,
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primaryText,
+                                                      size: 44.0,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'g9fmfo20' /* Deep Insights */,
+                                                    ),
+                                                    textAlign: TextAlign.center,
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .labelSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          fontSize: 16.0,
+                                                        ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
                                           ),
+                                        ),
+                                        InkWell(
+                                          splashColor: Colors.transparent,
+                                          focusColor: Colors.transparent,
+                                          hoverColor: Colors.transparent,
+                                          highlightColor: Colors.transparent,
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'YEAR_WRAPUP_COPY_Container_z35yoqtw_ON_T');
+                                            logFirebaseEvent(
+                                                'Container_navigate_to');
+
+                                            context.pushNamed('homePage');
+                                          },
+                                          child: Container(
+                                            width: MediaQuery.sizeOf(context)
+                                                    .width *
+                                                0.4,
+                                            height: 160.0,
+                                            decoration: BoxDecoration(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryBackground,
+                                              borderRadius:
+                                                  BorderRadius.circular(24.0),
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(12.0),
+                                              child: Column(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: [
+                                                  Padding(
+                                                    padding:
+                                                        const EdgeInsetsDirectional
+                                                            .fromSTEB(0.0, 0.0,
+                                                                0.0, 10.0),
+                                                    child: FaIcon(
+                                                      FontAwesomeIcons.trophy,
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primaryText,
+                                                      size: 44.0,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      '5lqrgpdz' /* Skill Development Plan */,
+                                                    ),
+                                                    textAlign: TextAlign.center,
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .labelSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          fontSize: 16.0,
+                                                        ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        InkWell(
+                                          splashColor: Colors.transparent,
+                                          focusColor: Colors.transparent,
+                                          hoverColor: Colors.transparent,
+                                          highlightColor: Colors.transparent,
+                                          onTap: () async {
+                                            logFirebaseEvent(
+                                                'YEAR_WRAPUP_COPY_Container_ocs5xd78_ON_T');
+                                            logFirebaseEvent(
+                                                'Container_navigate_to');
+
+                                            context.pushNamed(
+                                                'socialMediaPostPage');
+                                          },
+                                          child: Container(
+                                            width: MediaQuery.sizeOf(context)
+                                                    .width *
+                                                0.4,
+                                            height: 160.0,
+                                            decoration: BoxDecoration(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryBackground,
+                                              borderRadius:
+                                                  BorderRadius.circular(24.0),
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(12.0),
+                                              child: Column(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: [
+                                                  Padding(
+                                                    padding:
+                                                        const EdgeInsetsDirectional
+                                                            .fromSTEB(0.0, 0.0,
+                                                                0.0, 10.0),
+                                                    child: Icon(
+                                                      Icons
+                                                          .social_distance_rounded,
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primaryText,
+                                                      size: 44.0,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                      'wncav259' /* MarketYou */,
+                                                    ),
+                                                    textAlign: TextAlign.center,
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .labelSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          fontSize: 16.0,
+                                                        ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
                                     ),
-                                  ],
+                                  ),
                                 ),
-                              );
-                            }),
-                          );
-                        },
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
+                    ),
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),

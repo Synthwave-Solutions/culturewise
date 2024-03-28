@@ -3,7 +3,6 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -180,7 +179,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                       12.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'z26witvp' /* CultureWise */,
+                                      'z26witvp' /* BecomeGreat */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .headlineMedium
@@ -188,6 +187,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                           fontFamily: 'Sora',
                                           color:
                                               FlutterFlowTheme.of(context).info,
+                                          fontSize: 30.0,
                                         ),
                                   ),
                                 ),
@@ -328,7 +328,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                 'HOME_PAGE3_PAGE_Row_qlstrtd0_ON_TAP');
                             logFirebaseEvent('Row_navigate_to');
 
-                            context.pushNamed('homePage');
+                            context.pushNamed('yearWrapupPageCopy');
                           },
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -396,7 +396,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                 'HOME_PAGE3_PAGE_Row_p4hkglu1_ON_TAP');
                             logFirebaseEvent('Row_navigate_to');
 
-                            context.pushNamed('chat_ai_Screen');
+                            context.pushNamed('yearWrapupPageCopy');
                           },
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -925,11 +925,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                         mainAxisAlignment: MainAxisAlignment.end,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Divider(
-                            height: 12.0,
-                            thickness: 2.0,
-                            color: FlutterFlowTheme.of(context).accent1,
-                          ),
                           Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 12.0, 0.0),
@@ -1054,6 +1049,11 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                       ),
                     ),
                   ),
+                  Divider(
+                    height: 12.0,
+                    thickness: 2.0,
+                    color: FlutterFlowTheme.of(context).accent1,
+                  ),
                 ],
               ),
             ),
@@ -1125,7 +1125,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                     ),
                                     Text(
                                       FFLocalizations.of(context).getText(
-                                        'yql1axtt' /* Overview */,
+                                        'yql1axtt' /* Become Great Insights */,
                                       ),
                                       style: FlutterFlowTheme.of(context)
                                           .headlineMedium,
@@ -1135,7 +1135,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                           0.0, 4.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          '58j1q8zi' /* Below is a company overview */,
+                                          '58j1q8zi' /* Below is an overview of insigh... */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium,
@@ -1144,73 +1144,72 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                   ],
                                 ),
                               ),
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    16.0, 12.0, 16.0, 12.0),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    Container(
-                                      width: 50.0,
-                                      height: 50.0,
-                                      decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .accent1,
-                                        borderRadius:
-                                            BorderRadius.circular(12.0),
-                                        border: Border.all(
+                              if (responsiveVisibility(
+                                context: context,
+                                phone: false,
+                              ))
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      16.0, 12.0, 16.0, 12.0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Container(
+                                        width: 50.0,
+                                        height: 50.0,
+                                        decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
-                                              .primary,
-                                          width: 2.0,
-                                        ),
-                                      ),
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(2.0),
-                                        child: ClipRRect(
+                                              .accent1,
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
-                                          child: CachedNetworkImage(
-                                            fadeInDuration:
-                                                const Duration(milliseconds: 500),
-                                            fadeOutDuration:
-                                                const Duration(milliseconds: 500),
-                                            imageUrl:
-                                                'https://images.unsplash.com/photo-1624561172888-ac93c696e10c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fHVzZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-                                            width: 44.0,
-                                            height: 44.0,
-                                            fit: BoxFit.cover,
+                                              BorderRadius.circular(12.0),
+                                          border: Border.all(
+                                            color: FlutterFlowTheme.of(context)
+                                                .primary,
+                                            width: 2.0,
+                                          ),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(2.0),
+                                          child: AuthUserStreamWidget(
+                                            builder: (context) => ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: CachedNetworkImage(
+                                                fadeInDuration:
+                                                    const Duration(milliseconds: 500),
+                                                fadeOutDuration:
+                                                    const Duration(milliseconds: 500),
+                                                imageUrl: currentUserPhoto,
+                                                width: 44.0,
+                                                height: 44.0,
+                                                fit: BoxFit.cover,
+                                              ),
+                                            ),
                                           ),
                                         ),
                                       ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 0.0, 0.0, 0.0),
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Text(
-                                            FFLocalizations.of(context).getText(
-                                              '2w87my43' /* Andrew D. */,
+                                      Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            12.0, 0.0, 0.0, 0.0),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            AuthUserStreamWidget(
+                                              builder: (context) => Text(
+                                                currentUserDisplayName,
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyLarge,
+                                              ),
                                             ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyLarge,
-                                          ),
-                                          Text(
-                                            FFLocalizations.of(context).getText(
-                                              'edkduj91' /* admin@gmail.com */,
-                                            ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .labelMedium,
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
-                              ),
                             ],
                           ),
                         ),
@@ -1272,7 +1271,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                   Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      '6r9ce8ge' /* Income this Month */,
+                                                      '6r9ce8ge' /* Organizational Alignment Score */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -1295,7 +1294,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .getText(
-                                                              '9v1i9ato' /* $567,402 */,
+                                                              '9v1i9ato' /* 78/100 */,
                                                             ),
                                                             style: FlutterFlowTheme
                                                                     .of(context)
@@ -1361,7 +1360,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                   Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      'gstn6abf' /* Total Orders */,
+                                                      'gstn6abf' /* Culture Evolution Progress */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -1383,7 +1382,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                           FFLocalizations.of(
                                                                   context)
                                                               .getText(
-                                                            'a2i5rdim' /* 2,208 */,
+                                                            'a2i5rdim' /* 43/100 */,
                                                           ),
                                                           style: FlutterFlowTheme
                                                                   .of(context)
@@ -1448,7 +1447,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                   Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      'kikgagfv' /* Total Orders */,
+                                                      'kikgagfv' /* Learning and Development Utili... */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -1470,7 +1469,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                           FFLocalizations.of(
                                                                   context)
                                                               .getText(
-                                                            'g71zlgvy' /* 2,208 */,
+                                                            'g71zlgvy' /* 51/100 */,
                                                           ),
                                                           style: FlutterFlowTheme
                                                                   .of(context)
@@ -1535,7 +1534,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                   Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      'c11559gd' /* Total Orders */,
+                                                      'c11559gd' /* Leadership Engagement Index */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -1557,7 +1556,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                           FFLocalizations.of(
                                                                   context)
                                                               .getText(
-                                                            's58j7kdi' /* 2,208 */,
+                                                            's58j7kdi' /* 64/100 */,
                                                           ),
                                                           style: FlutterFlowTheme
                                                                   .of(context)
@@ -1651,37 +1650,11 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                 Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    '1ptegdfa' /* Outstanding Balance */,
+                                                    '1ptegdfa' /* Employee Satisfaction */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .labelMedium,
-                                                ),
-                                                Row(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  children: [
-                                                    Padding(
-                                                      padding:
-                                                          const EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0.0,
-                                                                  4.0,
-                                                                  4.0,
-                                                                  0.0),
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          'xbz9eafr' /* $529,204 */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .displaySmall,
-                                                      ),
-                                                    ),
-                                                  ],
                                                 ),
                                               ],
                                             ),
@@ -1691,7 +1664,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                             tabletLandscape: false,
                                           ))
                                             CircularPercentIndicator(
-                                              percent: 0.55,
+                                              percent: 0.67,
                                               radius: 45.0,
                                               lineWidth: 8.0,
                                               animation: true,
@@ -1705,7 +1678,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                               center: Text(
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                                  'kvieucvg' /* 55% */,
+                                                  'kvieucvg' /* 67% */,
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -1777,37 +1750,11 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                 Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    'oxozsepl' /* Outstanding Balance */,
+                                                    'oxozsepl' /* Employee Engagement Score */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .labelMedium,
-                                                ),
-                                                Row(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  children: [
-                                                    Padding(
-                                                      padding:
-                                                          const EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0.0,
-                                                                  4.0,
-                                                                  4.0,
-                                                                  0.0),
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          '2yqtm9gc' /* $529,204 */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .displaySmall,
-                                                      ),
-                                                    ),
-                                                  ],
                                                 ),
                                               ],
                                             ),
@@ -1943,7 +1890,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                               FFLocalizations.of(
                                                                       context)
                                                                   .getText(
-                                                                '0q2pfkxt' /* Network Requests */,
+                                                                '0q2pfkxt' /* Progress To Become Great Certi... */,
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -1961,7 +1908,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                                  '7svbu42y' /* You’re using 80% of available ... */,
+                                                                  '7svbu42y' /* You’re 80% of the way there to... */,
                                                                 ),
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
@@ -2020,41 +1967,13 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                 center: Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    'rv4ox3nw' /* 562k */,
+                                                    'rv4ox3nw' /* 80% */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .displaySmall,
                                                 ),
                                               ),
-                                            ),
-                                          ),
-                                          Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    24.0, 16.0, 24.0, 0.0),
-                                            child: Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                '210gxczk' /* You’ve almost reached your lim... */,
-                                              ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyLarge,
-                                            ),
-                                          ),
-                                          Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    24.0, 4.0, 24.0, 8.0),
-                                            child: Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                'racmr2ez' /* You have used 80% of your avai... */,
-                                              ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelSmall,
                                             ),
                                           ),
                                         ],
@@ -2121,7 +2040,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                          'ko0ku48q' /* Card Header */,
+                                                          'ko0ku48q' /* AI Analysises On Milestone Per... */,
                                                         ),
                                                         style:
                                                             FlutterFlowTheme.of(
@@ -2150,52 +2069,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                       ),
                                                     ),
                                                   ],
-                                                ),
-                                              ),
-                                              FFButtonWidget(
-                                                onPressed: () {
-                                                  print('Button pressed ...');
-                                                },
-                                                text:
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                  'ydydsrcs' /* Add New */,
-                                                ),
-                                                icon: Icon(
-                                                  Icons.add_rounded,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .info,
-                                                  size: 15.0,
-                                                ),
-                                                options: FFButtonOptions(
-                                                  height: 40.0,
-                                                  padding: const EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          16.0, 0.0, 16.0, 0.0),
-                                                  iconPadding:
-                                                      const EdgeInsetsDirectional
-                                                          .fromSTEB(0.0, 0.0,
-                                                              0.0, 0.0),
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primary,
-                                                  textStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleSmall
-                                                          .override(
-                                                            fontFamily: 'Inter',
-                                                            fontSize: 14.0,
-                                                          ),
-                                                  elevation: 2.0,
-                                                  borderSide: const BorderSide(
-                                                    color: Colors.transparent,
-                                                    width: 1.0,
-                                                  ),
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          8.0),
                                                 ),
                                               ),
                                             ],
@@ -2240,7 +2113,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                           FFLocalizations.of(
                                                                   context)
                                                               .getText(
-                                                            'l6o3my7e' /* Work Type */,
+                                                            'l6o3my7e' /* Category */,
                                                           ),
                                                           style: FlutterFlowTheme
                                                                   .of(context)
@@ -2253,7 +2126,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                          'kxedmxui' /* Assigned User */,
+                                                          'kxedmxui' /* Analysis Title */,
                                                         ),
                                                         style:
                                                             FlutterFlowTheme.of(
@@ -2261,30 +2134,13 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                 .labelSmall,
                                                       ),
                                                     ),
-                                                    if (responsiveVisibility(
-                                                      context: context,
-                                                      phone: false,
-                                                    ))
-                                                      Expanded(
-                                                        flex: 2,
-                                                        child: Text(
-                                                          FFLocalizations.of(
-                                                                  context)
-                                                              .getText(
-                                                            'yd31hjod' /* Contract Amount */,
-                                                          ),
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .labelSmall,
-                                                        ),
-                                                      ),
                                                     Expanded(
                                                       flex: 2,
                                                       child: Text(
                                                         FFLocalizations.of(
                                                                 context)
                                                             .getText(
-                                                          'f3lv4fxs' /* Status */,
+                                                          'f3lv4fxs' /* Read */,
                                                         ),
                                                         style:
                                                             FlutterFlowTheme.of(
@@ -2359,7 +2215,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                               FFLocalizations.of(
                                                                       context)
                                                                   .getText(
-                                                                'ui7m4zuo' /* Design Work */,
+                                                                'ui7m4zuo' /* Employee Well-being */,
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -2381,30 +2237,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                   MainAxisSize
                                                                       .max,
                                                               children: [
-                                                                Padding(
-                                                                  padding: const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          8.0,
-                                                                          0.0),
-                                                                  child:
-                                                                      ClipRRect(
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(
-                                                                            40.0),
-                                                                    child: Image
-                                                                        .network(
-                                                                      'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
-                                                                      width:
-                                                                          32.0,
-                                                                      height:
-                                                                          32.0,
-                                                                      fit: BoxFit
-                                                                          .cover,
-                                                                    ),
-                                                                  ),
-                                                                ),
                                                                 Expanded(
                                                                   child:
                                                                       Padding(
@@ -2429,7 +2261,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                         Text(
                                                                           FFLocalizations.of(context)
                                                                               .getText(
-                                                                            '9179jlyh' /* Randy Peterson */,
+                                                                            '9179jlyh' /* A Descriptive Analysis of Empl... */,
                                                                           ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
@@ -2437,23 +2269,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                                 fontFamily: 'Inter',
                                                                                 fontWeight: FontWeight.bold,
                                                                               ),
-                                                                        ),
-                                                                        Padding(
-                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
-                                                                              0.0,
-                                                                              4.0,
-                                                                              0.0,
-                                                                              0.0),
-                                                                          child:
-                                                                              Text(
-                                                                            FFLocalizations.of(context).getText(
-                                                                              'r5yrxned' /* Business Name */,
-                                                                            ),
-                                                                            style: FlutterFlowTheme.of(context).bodySmall.override(
-                                                                                  fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).primary,
-                                                                                ),
-                                                                          ),
                                                                         ),
                                                                       ],
                                                                     ),
@@ -2463,23 +2278,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                             ),
                                                           ),
                                                         ),
-                                                        if (responsiveVisibility(
-                                                          context: context,
-                                                          phone: false,
-                                                        ))
-                                                          Expanded(
-                                                            flex: 2,
-                                                            child: Text(
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                                '6zcnatt6' /* $2,100 */,
-                                                              ),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .titleLarge,
-                                                            ),
-                                                          ),
                                                         Expanded(
                                                           flex: 2,
                                                           child: Row(
@@ -2520,7 +2318,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                     FFLocalizations.of(
                                                                             context)
                                                                         .getText(
-                                                                      'pbjxsvjn' /* Paid */,
+                                                                      'pbjxsvjn' /* Read */,
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
@@ -2612,7 +2410,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                               FFLocalizations.of(
                                                                       context)
                                                                   .getText(
-                                                                'qncrhjmx' /* Design Work */,
+                                                                'qncrhjmx' /* Diversity Iniatives */,
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -2634,30 +2432,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                   MainAxisSize
                                                                       .max,
                                                               children: [
-                                                                Padding(
-                                                                  padding: const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          8.0,
-                                                                          0.0),
-                                                                  child:
-                                                                      ClipRRect(
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(
-                                                                            40.0),
-                                                                    child: Image
-                                                                        .network(
-                                                                      'https://images.unsplash.com/photo-1474176857210-7287d38d27c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHVzZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-                                                                      width:
-                                                                          32.0,
-                                                                      height:
-                                                                          32.0,
-                                                                      fit: BoxFit
-                                                                          .cover,
-                                                                    ),
-                                                                  ),
-                                                                ),
                                                                 Expanded(
                                                                   child:
                                                                       Padding(
@@ -2682,7 +2456,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                         Text(
                                                                           FFLocalizations.of(context)
                                                                               .getText(
-                                                                            '66cbuxa4' /* Randy Peterson */,
+                                                                            '66cbuxa4' /* Analyzing the Progress in Dive... */,
                                                                           ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
@@ -2690,23 +2464,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                                 fontFamily: 'Inter',
                                                                                 fontWeight: FontWeight.bold,
                                                                               ),
-                                                                        ),
-                                                                        Padding(
-                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
-                                                                              0.0,
-                                                                              4.0,
-                                                                              0.0,
-                                                                              0.0),
-                                                                          child:
-                                                                              Text(
-                                                                            FFLocalizations.of(context).getText(
-                                                                              '2peasx13' /* Business Name */,
-                                                                            ),
-                                                                            style: FlutterFlowTheme.of(context).bodySmall.override(
-                                                                                  fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).primary,
-                                                                                ),
-                                                                          ),
                                                                         ),
                                                                       ],
                                                                     ),
@@ -2716,23 +2473,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                             ),
                                                           ),
                                                         ),
-                                                        if (responsiveVisibility(
-                                                          context: context,
-                                                          phone: false,
-                                                        ))
-                                                          Expanded(
-                                                            flex: 2,
-                                                            child: Text(
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                                'pemypvse' /* $2,100 */,
-                                                              ),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .titleLarge,
-                                                            ),
-                                                          ),
                                                         Expanded(
                                                           flex: 2,
                                                           child: Row(
@@ -2773,7 +2513,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                     FFLocalizations.of(
                                                                             context)
                                                                         .getText(
-                                                                      'dyzw4j2v' /* Paid */,
+                                                                      'dyzw4j2v' /* Read */,
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
@@ -2865,7 +2605,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                               FFLocalizations.of(
                                                                       context)
                                                                   .getText(
-                                                                '65tbgasx' /* Design Work */,
+                                                                '65tbgasx' /* Productivity */,
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -2887,30 +2627,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                   MainAxisSize
                                                                       .max,
                                                               children: [
-                                                                Padding(
-                                                                  padding: const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          8.0,
-                                                                          0.0),
-                                                                  child:
-                                                                      ClipRRect(
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(
-                                                                            40.0),
-                                                                    child: Image
-                                                                        .network(
-                                                                      'https://images.unsplash.com/photo-1474176857210-7287d38d27c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHVzZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-                                                                      width:
-                                                                          32.0,
-                                                                      height:
-                                                                          32.0,
-                                                                      fit: BoxFit
-                                                                          .cover,
-                                                                    ),
-                                                                  ),
-                                                                ),
                                                                 Expanded(
                                                                   child:
                                                                       Padding(
@@ -2935,7 +2651,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                         Text(
                                                                           FFLocalizations.of(context)
                                                                               .getText(
-                                                                            '4m2rz0rh' /* Randy Peterson */,
+                                                                            '4m2rz0rh' /* An AI-Driven Overview of Recen... */,
                                                                           ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
@@ -2943,23 +2659,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                                 fontFamily: 'Inter',
                                                                                 fontWeight: FontWeight.bold,
                                                                               ),
-                                                                        ),
-                                                                        Padding(
-                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
-                                                                              0.0,
-                                                                              4.0,
-                                                                              0.0,
-                                                                              0.0),
-                                                                          child:
-                                                                              Text(
-                                                                            FFLocalizations.of(context).getText(
-                                                                              'umwkbvge' /* Business Name */,
-                                                                            ),
-                                                                            style: FlutterFlowTheme.of(context).bodySmall.override(
-                                                                                  fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).primary,
-                                                                                ),
-                                                                          ),
                                                                         ),
                                                                       ],
                                                                     ),
@@ -2969,23 +2668,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                             ),
                                                           ),
                                                         ),
-                                                        if (responsiveVisibility(
-                                                          context: context,
-                                                          phone: false,
-                                                        ))
-                                                          Expanded(
-                                                            flex: 2,
-                                                            child: Text(
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                                'ncznn7qp' /* $2,100 */,
-                                                              ),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .titleLarge,
-                                                            ),
-                                                          ),
                                                         Expanded(
                                                           flex: 2,
                                                           child: Row(
@@ -3026,7 +2708,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                     FFLocalizations.of(
                                                                             context)
                                                                         .getText(
-                                                                      '6txv8k9p' /* Paid */,
+                                                                      '6txv8k9p' /* Read */,
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
@@ -3118,7 +2800,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                               FFLocalizations.of(
                                                                       context)
                                                                   .getText(
-                                                                'cpyj3a13' /* Design Work */,
+                                                                'cpyj3a13' /* Collaboration */,
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -3140,30 +2822,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                   MainAxisSize
                                                                       .max,
                                                               children: [
-                                                                Padding(
-                                                                  padding: const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          8.0,
-                                                                          0.0),
-                                                                  child:
-                                                                      ClipRRect(
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(
-                                                                            40.0),
-                                                                    child: Image
-                                                                        .network(
-                                                                      'https://images.unsplash.com/photo-1474176857210-7287d38d27c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHVzZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-                                                                      width:
-                                                                          32.0,
-                                                                      height:
-                                                                          32.0,
-                                                                      fit: BoxFit
-                                                                          .cover,
-                                                                    ),
-                                                                  ),
-                                                                ),
                                                                 Expanded(
                                                                   child:
                                                                       Padding(
@@ -3188,7 +2846,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                         Text(
                                                                           FFLocalizations.of(context)
                                                                               .getText(
-                                                                            'ybnonw57' /* Randy Peterson */,
+                                                                            'ybnonw57' /* Insights from AI-Powered Analy... */,
                                                                           ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
@@ -3196,23 +2854,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                                 fontFamily: 'Inter',
                                                                                 fontWeight: FontWeight.bold,
                                                                               ),
-                                                                        ),
-                                                                        Padding(
-                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
-                                                                              0.0,
-                                                                              4.0,
-                                                                              0.0,
-                                                                              0.0),
-                                                                          child:
-                                                                              Text(
-                                                                            FFLocalizations.of(context).getText(
-                                                                              'pqz1t1ks' /* Business Name */,
-                                                                            ),
-                                                                            style: FlutterFlowTheme.of(context).bodySmall.override(
-                                                                                  fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).primary,
-                                                                                ),
-                                                                          ),
                                                                         ),
                                                                       ],
                                                                     ),
@@ -3222,23 +2863,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                             ),
                                                           ),
                                                         ),
-                                                        if (responsiveVisibility(
-                                                          context: context,
-                                                          phone: false,
-                                                        ))
-                                                          Expanded(
-                                                            flex: 2,
-                                                            child: Text(
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                                'dpj1zuio' /* $2,100 */,
-                                                              ),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .titleLarge,
-                                                            ),
-                                                          ),
                                                         Expanded(
                                                           flex: 2,
                                                           child: Row(
@@ -3279,7 +2903,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                     FFLocalizations.of(
                                                                             context)
                                                                         .getText(
-                                                                      'tlxjjhas' /* Paid */,
+                                                                      'tlxjjhas' /* Read */,
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
@@ -3371,7 +2995,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                               FFLocalizations.of(
                                                                       context)
                                                                   .getText(
-                                                                'ga10ao5f' /* Design Work */,
+                                                                'ga10ao5f' /* Leadership */,
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -3393,30 +3017,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                   MainAxisSize
                                                                       .max,
                                                               children: [
-                                                                Padding(
-                                                                  padding: const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          8.0,
-                                                                          0.0),
-                                                                  child:
-                                                                      ClipRRect(
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(
-                                                                            40.0),
-                                                                    child: Image
-                                                                        .network(
-                                                                      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
-                                                                      width:
-                                                                          32.0,
-                                                                      height:
-                                                                          32.0,
-                                                                      fit: BoxFit
-                                                                          .cover,
-                                                                    ),
-                                                                  ),
-                                                                ),
                                                                 Expanded(
                                                                   child:
                                                                       Padding(
@@ -3441,7 +3041,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                         Text(
                                                                           FFLocalizations.of(context)
                                                                               .getText(
-                                                                            'as0c5wds' /* Randy Peterson */,
+                                                                            'as0c5wds' /* An Analytical Review of Leader... */,
                                                                           ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
@@ -3449,23 +3049,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                                 fontFamily: 'Inter',
                                                                                 fontWeight: FontWeight.bold,
                                                                               ),
-                                                                        ),
-                                                                        Padding(
-                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
-                                                                              0.0,
-                                                                              4.0,
-                                                                              0.0,
-                                                                              0.0),
-                                                                          child:
-                                                                              Text(
-                                                                            FFLocalizations.of(context).getText(
-                                                                              'rg4pn2ro' /* Business Name */,
-                                                                            ),
-                                                                            style: FlutterFlowTheme.of(context).bodySmall.override(
-                                                                                  fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).primary,
-                                                                                ),
-                                                                          ),
                                                                         ),
                                                                       ],
                                                                     ),
@@ -3475,23 +3058,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                             ),
                                                           ),
                                                         ),
-                                                        if (responsiveVisibility(
-                                                          context: context,
-                                                          phone: false,
-                                                        ))
-                                                          Expanded(
-                                                            flex: 2,
-                                                            child: Text(
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                                'mmmn8uao' /* $2,100 */,
-                                                              ),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .titleLarge,
-                                                            ),
-                                                          ),
                                                         Expanded(
                                                           flex: 2,
                                                           child: Row(
@@ -3505,11 +3071,17 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                     BoxDecoration(
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .primaryBackground,
+                                                                      .accent2,
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .circular(
                                                                               40.0),
+                                                                  border: Border
+                                                                      .all(
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondary,
+                                                                  ),
                                                                 ),
                                                                 alignment:
                                                                     const AlignmentDirectional(
@@ -3526,7 +3098,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                     FFLocalizations.of(
                                                                             context)
                                                                         .getText(
-                                                                      '2s73nq0e' /* Pending */,
+                                                                      '2s73nq0e' /* Read */,
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
@@ -3618,7 +3190,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                               FFLocalizations.of(
                                                                       context)
                                                                   .getText(
-                                                                '6so8n903' /* Design Work */,
+                                                                '6so8n903' /* Productivity */,
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -3640,30 +3212,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                   MainAxisSize
                                                                       .max,
                                                               children: [
-                                                                Padding(
-                                                                  padding: const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          8.0,
-                                                                          0.0),
-                                                                  child:
-                                                                      ClipRRect(
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(
-                                                                            40.0),
-                                                                    child: Image
-                                                                        .network(
-                                                                      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
-                                                                      width:
-                                                                          32.0,
-                                                                      height:
-                                                                          32.0,
-                                                                      fit: BoxFit
-                                                                          .cover,
-                                                                    ),
-                                                                  ),
-                                                                ),
                                                                 Expanded(
                                                                   child:
                                                                       Padding(
@@ -3688,7 +3236,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                         Text(
                                                                           FFLocalizations.of(context)
                                                                               .getText(
-                                                                            'cfotscu5' /* Randy Peterson */,
+                                                                            'cfotscu5' /* Predictive Analysis on the Evo... */,
                                                                           ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
@@ -3696,23 +3244,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                                 fontFamily: 'Inter',
                                                                                 fontWeight: FontWeight.bold,
                                                                               ),
-                                                                        ),
-                                                                        Padding(
-                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
-                                                                              0.0,
-                                                                              4.0,
-                                                                              0.0,
-                                                                              0.0),
-                                                                          child:
-                                                                              Text(
-                                                                            FFLocalizations.of(context).getText(
-                                                                              'grfspct8' /* Business Name */,
-                                                                            ),
-                                                                            style: FlutterFlowTheme.of(context).bodySmall.override(
-                                                                                  fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).primary,
-                                                                                ),
-                                                                          ),
                                                                         ),
                                                                       ],
                                                                     ),
@@ -3722,23 +3253,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                             ),
                                                           ),
                                                         ),
-                                                        if (responsiveVisibility(
-                                                          context: context,
-                                                          phone: false,
-                                                        ))
-                                                          Expanded(
-                                                            flex: 2,
-                                                            child: Text(
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                                'whpt7hl1' /* $2,100 */,
-                                                              ),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .titleLarge,
-                                                            ),
-                                                          ),
                                                         Expanded(
                                                           flex: 2,
                                                           child: Row(
@@ -3752,11 +3266,17 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                     BoxDecoration(
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .primaryBackground,
+                                                                      .accent2,
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .circular(
                                                                               40.0),
+                                                                  border: Border
+                                                                      .all(
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondary,
+                                                                  ),
                                                                 ),
                                                                 alignment:
                                                                     const AlignmentDirectional(
@@ -3773,7 +3293,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                     FFLocalizations.of(
                                                                             context)
                                                                         .getText(
-                                                                      'euyu1zc4' /* Pending */,
+                                                                      'euyu1zc4' /* Read */,
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
@@ -3865,7 +3385,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                               FFLocalizations.of(
                                                                       context)
                                                                   .getText(
-                                                                'xc3khmae' /* Design Work */,
+                                                                'xc3khmae' /* Engagement Scores */,
                                                               ),
                                                               style: FlutterFlowTheme
                                                                       .of(context)
@@ -3887,30 +3407,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                   MainAxisSize
                                                                       .max,
                                                               children: [
-                                                                Padding(
-                                                                  padding: const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          8.0,
-                                                                          0.0),
-                                                                  child:
-                                                                      ClipRRect(
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(
-                                                                            40.0),
-                                                                    child: Image
-                                                                        .network(
-                                                                      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
-                                                                      width:
-                                                                          32.0,
-                                                                      height:
-                                                                          32.0,
-                                                                      fit: BoxFit
-                                                                          .cover,
-                                                                    ),
-                                                                  ),
-                                                                ),
                                                                 Expanded(
                                                                   child:
                                                                       Padding(
@@ -3935,7 +3431,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                         Text(
                                                                           FFLocalizations.of(context)
                                                                               .getText(
-                                                                            'v6acq2vs' /* Randy Peterson */,
+                                                                            'v6acq2vs' /* AI-Assisted Examination of Eng... */,
                                                                           ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
@@ -3943,23 +3439,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                                 fontFamily: 'Inter',
                                                                                 fontWeight: FontWeight.bold,
                                                                               ),
-                                                                        ),
-                                                                        Padding(
-                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
-                                                                              0.0,
-                                                                              4.0,
-                                                                              0.0,
-                                                                              0.0),
-                                                                          child:
-                                                                              Text(
-                                                                            FFLocalizations.of(context).getText(
-                                                                              '4p3b332t' /* Business Name */,
-                                                                            ),
-                                                                            style: FlutterFlowTheme.of(context).bodySmall.override(
-                                                                                  fontFamily: 'Inter',
-                                                                                  color: FlutterFlowTheme.of(context).primary,
-                                                                                ),
-                                                                          ),
                                                                         ),
                                                                       ],
                                                                     ),
@@ -3969,23 +3448,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                             ),
                                                           ),
                                                         ),
-                                                        if (responsiveVisibility(
-                                                          context: context,
-                                                          phone: false,
-                                                        ))
-                                                          Expanded(
-                                                            flex: 2,
-                                                            child: Text(
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                                '1048inli' /* $2,100 */,
-                                                              ),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .titleLarge,
-                                                            ),
-                                                          ),
                                                         Expanded(
                                                           flex: 2,
                                                           child: Row(
@@ -3999,11 +3461,17 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                     BoxDecoration(
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .primaryBackground,
+                                                                      .accent2,
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .circular(
                                                                               40.0),
+                                                                  border: Border
+                                                                      .all(
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondary,
+                                                                  ),
                                                                 ),
                                                                 alignment:
                                                                     const AlignmentDirectional(
@@ -4020,7 +3488,7 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                                                                     FFLocalizations.of(
                                                                             context)
                                                                         .getText(
-                                                                      'q68nl1i1' /* Pending */,
+                                                                      'q68nl1i1' /* Read */,
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
@@ -4083,1976 +3551,6 @@ class _HomePage3WidgetState extends State<HomePage3Widget>
                               .divide(const SizedBox(width: 16.0))
                               .addToStart(const SizedBox(width: 16.0)),
                         ),
-                        if (responsiveVisibility(
-                          context: context,
-                          desktop: false,
-                        ))
-                          Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                16.0, 16.0, 16.0, 0.0),
-                            child: Container(
-                              width: double.infinity,
-                              constraints: const BoxConstraints(
-                                maxWidth: 1370.0,
-                              ),
-                              decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
-                                borderRadius: BorderRadius.circular(8.0),
-                                border: Border.all(
-                                  color: FlutterFlowTheme.of(context).alternate,
-                                  width: 1.0,
-                                ),
-                              ),
-                              child: Padding(
-                                padding: const EdgeInsets.all(16.0),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Expanded(
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.max,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        0.0, 0.0, 12.0, 0.0),
-                                                child: Text(
-                                                  FFLocalizations.of(context)
-                                                      .getText(
-                                                    '81mcfiea' /* Card Header */,
-                                                  ),
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .headlineMedium,
-                                                ),
-                                              ),
-                                              Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        0.0, 4.0, 12.0, 0.0),
-                                                child: Text(
-                                                  FFLocalizations.of(context)
-                                                      .getText(
-                                                    '10qap9iw' /* Create tables and ui elements ... */,
-                                                  ),
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .labelMedium,
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                        FFButtonWidget(
-                                          onPressed: () {
-                                            print('Button pressed ...');
-                                          },
-                                          text: FFLocalizations.of(context)
-                                              .getText(
-                                            'jtb5ai80' /* Add New */,
-                                          ),
-                                          icon: Icon(
-                                            Icons.add_rounded,
-                                            color: FlutterFlowTheme.of(context)
-                                                .info,
-                                            size: 15.0,
-                                          ),
-                                          options: FFButtonOptions(
-                                            height: 40.0,
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    16.0, 0.0, 16.0, 0.0),
-                                            iconPadding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 0.0, 0.0, 0.0),
-                                            color: FlutterFlowTheme.of(context)
-                                                .primary,
-                                            textStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Inter',
-                                                      fontSize: 14.0,
-                                                    ),
-                                            elevation: 2.0,
-                                            borderSide: const BorderSide(
-                                              color: Colors.transparent,
-                                              width: 1.0,
-                                            ),
-                                            borderRadius:
-                                                BorderRadius.circular(8.0),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 16.0, 0.0, 0.0),
-                                      child: Container(
-                                        width: double.infinity,
-                                        height: 40.0,
-                                        decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .primaryBackground,
-                                          borderRadius: const BorderRadius.only(
-                                            bottomLeft: Radius.circular(0.0),
-                                            bottomRight: Radius.circular(0.0),
-                                            topLeft: Radius.circular(8.0),
-                                            topRight: Radius.circular(8.0),
-                                          ),
-                                        ),
-                                        child: Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 0.0, 16.0, 0.0),
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            children: [
-                                              if (responsiveVisibility(
-                                                context: context,
-                                                phone: false,
-                                                tablet: false,
-                                              ))
-                                                Expanded(
-                                                  flex: 2,
-                                                  child: Text(
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                      'w9uys3hz' /* Work Type */,
-                                                    ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .labelSmall,
-                                                  ),
-                                                ),
-                                              Expanded(
-                                                flex: 4,
-                                                child: Text(
-                                                  FFLocalizations.of(context)
-                                                      .getText(
-                                                    'tihs6kz8' /* Assigned User */,
-                                                  ),
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .labelSmall,
-                                                ),
-                                              ),
-                                              if (responsiveVisibility(
-                                                context: context,
-                                                phone: false,
-                                              ))
-                                                Expanded(
-                                                  flex: 2,
-                                                  child: Text(
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                      'v1ugdhri' /* Contract Amount */,
-                                                    ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .labelSmall,
-                                                  ),
-                                                ),
-                                              Expanded(
-                                                flex: 2,
-                                                child: Text(
-                                                  FFLocalizations.of(context)
-                                                      .getText(
-                                                    's1qjgqq5' /* Status */,
-                                                  ),
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .labelSmall,
-                                                ),
-                                              ),
-                                              Expanded(
-                                                flex: 1,
-                                                child: Text(
-                                                  FFLocalizations.of(context)
-                                                      .getText(
-                                                    'bd7jcn14' /* Actions */,
-                                                  ),
-                                                  textAlign: TextAlign.end,
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .labelSmall,
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    ListView(
-                                      padding: EdgeInsets.zero,
-                                      shrinkWrap: true,
-                                      scrollDirection: Axis.vertical,
-                                      children: [
-                                        Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 1.0),
-                                          child: Container(
-                                            width: 100.0,
-                                            decoration: BoxDecoration(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
-                                              boxShadow: [
-                                                BoxShadow(
-                                                  blurRadius: 0.0,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryBackground,
-                                                  offset: const Offset(0.0, 1.0),
-                                                )
-                                              ],
-                                            ),
-                                            child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      16.0, 0.0, 16.0, 0.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                children: [
-                                                  if (responsiveVisibility(
-                                                    context: context,
-                                                    phone: false,
-                                                    tablet: false,
-                                                  ))
-                                                    Expanded(
-                                                      flex: 2,
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          'tnnp5bi8' /* Design Work */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium,
-                                                      ),
-                                                    ),
-                                                  Expanded(
-                                                    flex: 4,
-                                                    child: Padding(
-                                                      padding:
-                                                          const EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0.0,
-                                                                  8.0,
-                                                                  12.0,
-                                                                  8.0),
-                                                      child: Row(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        children: [
-                                                          Padding(
-                                                            padding:
-                                                                const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        8.0,
-                                                                        0.0),
-                                                            child: ClipRRect(
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          40.0),
-                                                              child:
-                                                                  Image.network(
-                                                                'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
-                                                                width: 32.0,
-                                                                height: 32.0,
-                                                                fit: BoxFit
-                                                                    .cover,
-                                                              ),
-                                                            ),
-                                                          ),
-                                                          Expanded(
-                                                            child: Padding(
-                                                              padding:
-                                                                  const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          4.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                              child: Column(
-                                                                mainAxisSize:
-                                                                    MainAxisSize
-                                                                        .max,
-                                                                mainAxisAlignment:
-                                                                    MainAxisAlignment
-                                                                        .center,
-                                                                crossAxisAlignment:
-                                                                    CrossAxisAlignment
-                                                                        .start,
-                                                                children: [
-                                                                  Text(
-                                                                    FFLocalizations.of(
-                                                                            context)
-                                                                        .getText(
-                                                                      'kshscisl' /* Randy Peterson */,
-                                                                    ),
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .override(
-                                                                          fontFamily:
-                                                                              'Inter',
-                                                                          fontWeight:
-                                                                              FontWeight.bold,
-                                                                        ),
-                                                                  ),
-                                                                  Padding(
-                                                                    padding: const EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            4.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                    child: Text(
-                                                                      FFLocalizations.of(
-                                                                              context)
-                                                                          .getText(
-                                                                        'n3z2wzl7' /* Business Name */,
-                                                                      ),
-                                                                      style: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodySmall
-                                                                          .override(
-                                                                            fontFamily:
-                                                                                'Inter',
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primary,
-                                                                          ),
-                                                                    ),
-                                                                  ),
-                                                                ],
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  if (responsiveVisibility(
-                                                    context: context,
-                                                    phone: false,
-                                                  ))
-                                                    Expanded(
-                                                      flex: 2,
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          '7a8mw63q' /* $2,100 */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleLarge,
-                                                      ),
-                                                    ),
-                                                  Expanded(
-                                                    flex: 2,
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      children: [
-                                                        Container(
-                                                          height: 32.0,
-                                                          decoration:
-                                                              BoxDecoration(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .accent2,
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        40.0),
-                                                            border: Border.all(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .secondary,
-                                                            ),
-                                                          ),
-                                                          alignment:
-                                                              const AlignmentDirectional(
-                                                                  0.0, 0.0),
-                                                          child: Padding(
-                                                            padding:
-                                                                const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        12.0,
-                                                                        0.0,
-                                                                        12.0,
-                                                                        0.0),
-                                                            child: Text(
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                                'xuqfk9pu' /* Paid */,
-                                                              ),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium,
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                  Expanded(
-                                                    flex: 1,
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment.end,
-                                                      children: [
-                                                        FlutterFlowIconButton(
-                                                          borderColor: Colors
-                                                              .transparent,
-                                                          borderRadius: 30.0,
-                                                          borderWidth: 1.0,
-                                                          buttonSize: 44.0,
-                                                          icon: Icon(
-                                                            Icons.more_vert,
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .secondaryText,
-                                                            size: 20.0,
-                                                          ),
-                                                          onPressed: () {
-                                                            print(
-                                                                'IconButton pressed ...');
-                                                          },
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 1.0),
-                                          child: Container(
-                                            width: 100.0,
-                                            decoration: BoxDecoration(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
-                                              boxShadow: [
-                                                BoxShadow(
-                                                  blurRadius: 0.0,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryBackground,
-                                                  offset: const Offset(0.0, 1.0),
-                                                )
-                                              ],
-                                            ),
-                                            child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      16.0, 0.0, 16.0, 0.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                children: [
-                                                  if (responsiveVisibility(
-                                                    context: context,
-                                                    phone: false,
-                                                    tablet: false,
-                                                  ))
-                                                    Expanded(
-                                                      flex: 2,
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          'jpz75zwx' /* Design Work */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium,
-                                                      ),
-                                                    ),
-                                                  Expanded(
-                                                    flex: 4,
-                                                    child: Padding(
-                                                      padding:
-                                                          const EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0.0,
-                                                                  8.0,
-                                                                  12.0,
-                                                                  8.0),
-                                                      child: Row(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        children: [
-                                                          Padding(
-                                                            padding:
-                                                                const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        8.0,
-                                                                        0.0),
-                                                            child: ClipRRect(
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          40.0),
-                                                              child:
-                                                                  Image.network(
-                                                                'https://images.unsplash.com/photo-1474176857210-7287d38d27c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHVzZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-                                                                width: 32.0,
-                                                                height: 32.0,
-                                                                fit: BoxFit
-                                                                    .cover,
-                                                              ),
-                                                            ),
-                                                          ),
-                                                          Expanded(
-                                                            child: Padding(
-                                                              padding:
-                                                                  const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          4.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                              child: Column(
-                                                                mainAxisSize:
-                                                                    MainAxisSize
-                                                                        .max,
-                                                                mainAxisAlignment:
-                                                                    MainAxisAlignment
-                                                                        .center,
-                                                                crossAxisAlignment:
-                                                                    CrossAxisAlignment
-                                                                        .start,
-                                                                children: [
-                                                                  Text(
-                                                                    FFLocalizations.of(
-                                                                            context)
-                                                                        .getText(
-                                                                      'syfrgaq7' /* Randy Peterson */,
-                                                                    ),
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .override(
-                                                                          fontFamily:
-                                                                              'Inter',
-                                                                          fontWeight:
-                                                                              FontWeight.bold,
-                                                                        ),
-                                                                  ),
-                                                                  Padding(
-                                                                    padding: const EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            4.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                    child: Text(
-                                                                      FFLocalizations.of(
-                                                                              context)
-                                                                          .getText(
-                                                                        'ahn78sa5' /* Business Name */,
-                                                                      ),
-                                                                      style: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodySmall
-                                                                          .override(
-                                                                            fontFamily:
-                                                                                'Inter',
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primary,
-                                                                          ),
-                                                                    ),
-                                                                  ),
-                                                                ],
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  if (responsiveVisibility(
-                                                    context: context,
-                                                    phone: false,
-                                                  ))
-                                                    Expanded(
-                                                      flex: 2,
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          'ito7mxyv' /* $2,100 */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleLarge,
-                                                      ),
-                                                    ),
-                                                  Expanded(
-                                                    flex: 2,
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      children: [
-                                                        Container(
-                                                          height: 32.0,
-                                                          decoration:
-                                                              BoxDecoration(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .accent2,
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        40.0),
-                                                            border: Border.all(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .secondary,
-                                                            ),
-                                                          ),
-                                                          alignment:
-                                                              const AlignmentDirectional(
-                                                                  0.0, 0.0),
-                                                          child: Padding(
-                                                            padding:
-                                                                const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        12.0,
-                                                                        0.0,
-                                                                        12.0,
-                                                                        0.0),
-                                                            child: Text(
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                                'c6qpy8c2' /* Paid */,
-                                                              ),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium,
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                  Expanded(
-                                                    flex: 1,
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment.end,
-                                                      children: [
-                                                        FlutterFlowIconButton(
-                                                          borderColor: Colors
-                                                              .transparent,
-                                                          borderRadius: 30.0,
-                                                          borderWidth: 1.0,
-                                                          buttonSize: 44.0,
-                                                          icon: Icon(
-                                                            Icons.more_vert,
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .secondaryText,
-                                                            size: 20.0,
-                                                          ),
-                                                          onPressed: () {
-                                                            print(
-                                                                'IconButton pressed ...');
-                                                          },
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 1.0),
-                                          child: Container(
-                                            width: 100.0,
-                                            decoration: BoxDecoration(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
-                                              boxShadow: [
-                                                BoxShadow(
-                                                  blurRadius: 0.0,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryBackground,
-                                                  offset: const Offset(0.0, 1.0),
-                                                )
-                                              ],
-                                            ),
-                                            child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      16.0, 0.0, 16.0, 0.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                children: [
-                                                  if (responsiveVisibility(
-                                                    context: context,
-                                                    phone: false,
-                                                    tablet: false,
-                                                  ))
-                                                    Expanded(
-                                                      flex: 2,
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          'a8uolqpe' /* Design Work */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium,
-                                                      ),
-                                                    ),
-                                                  Expanded(
-                                                    flex: 4,
-                                                    child: Padding(
-                                                      padding:
-                                                          const EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0.0,
-                                                                  8.0,
-                                                                  12.0,
-                                                                  8.0),
-                                                      child: Row(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        children: [
-                                                          Padding(
-                                                            padding:
-                                                                const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        8.0,
-                                                                        0.0),
-                                                            child: ClipRRect(
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          40.0),
-                                                              child:
-                                                                  Image.network(
-                                                                'https://images.unsplash.com/photo-1474176857210-7287d38d27c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHVzZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-                                                                width: 32.0,
-                                                                height: 32.0,
-                                                                fit: BoxFit
-                                                                    .cover,
-                                                              ),
-                                                            ),
-                                                          ),
-                                                          Expanded(
-                                                            child: Padding(
-                                                              padding:
-                                                                  const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          4.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                              child: Column(
-                                                                mainAxisSize:
-                                                                    MainAxisSize
-                                                                        .max,
-                                                                mainAxisAlignment:
-                                                                    MainAxisAlignment
-                                                                        .center,
-                                                                crossAxisAlignment:
-                                                                    CrossAxisAlignment
-                                                                        .start,
-                                                                children: [
-                                                                  Text(
-                                                                    FFLocalizations.of(
-                                                                            context)
-                                                                        .getText(
-                                                                      'o7unkp20' /* Randy Peterson */,
-                                                                    ),
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .override(
-                                                                          fontFamily:
-                                                                              'Inter',
-                                                                          fontWeight:
-                                                                              FontWeight.bold,
-                                                                        ),
-                                                                  ),
-                                                                  Padding(
-                                                                    padding: const EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            4.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                    child: Text(
-                                                                      FFLocalizations.of(
-                                                                              context)
-                                                                          .getText(
-                                                                        '0zuh0p36' /* Business Name */,
-                                                                      ),
-                                                                      style: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodySmall
-                                                                          .override(
-                                                                            fontFamily:
-                                                                                'Inter',
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primary,
-                                                                          ),
-                                                                    ),
-                                                                  ),
-                                                                ],
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  if (responsiveVisibility(
-                                                    context: context,
-                                                    phone: false,
-                                                  ))
-                                                    Expanded(
-                                                      flex: 2,
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          'vb11yj79' /* $2,100 */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleLarge,
-                                                      ),
-                                                    ),
-                                                  Expanded(
-                                                    flex: 2,
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      children: [
-                                                        Container(
-                                                          height: 32.0,
-                                                          decoration:
-                                                              BoxDecoration(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .accent2,
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        40.0),
-                                                            border: Border.all(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .secondary,
-                                                            ),
-                                                          ),
-                                                          alignment:
-                                                              const AlignmentDirectional(
-                                                                  0.0, 0.0),
-                                                          child: Padding(
-                                                            padding:
-                                                                const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        12.0,
-                                                                        0.0,
-                                                                        12.0,
-                                                                        0.0),
-                                                            child: Text(
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                                'yl65olfl' /* Paid */,
-                                                              ),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium,
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                  Expanded(
-                                                    flex: 1,
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment.end,
-                                                      children: [
-                                                        FlutterFlowIconButton(
-                                                          borderColor: Colors
-                                                              .transparent,
-                                                          borderRadius: 30.0,
-                                                          borderWidth: 1.0,
-                                                          buttonSize: 44.0,
-                                                          icon: Icon(
-                                                            Icons.more_vert,
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .secondaryText,
-                                                            size: 20.0,
-                                                          ),
-                                                          onPressed: () {
-                                                            print(
-                                                                'IconButton pressed ...');
-                                                          },
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 1.0),
-                                          child: Container(
-                                            width: 100.0,
-                                            decoration: BoxDecoration(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
-                                              boxShadow: [
-                                                BoxShadow(
-                                                  blurRadius: 0.0,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryBackground,
-                                                  offset: const Offset(0.0, 1.0),
-                                                )
-                                              ],
-                                            ),
-                                            child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      16.0, 0.0, 16.0, 0.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                children: [
-                                                  if (responsiveVisibility(
-                                                    context: context,
-                                                    phone: false,
-                                                    tablet: false,
-                                                  ))
-                                                    Expanded(
-                                                      flex: 2,
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          'bc3qaipo' /* Design Work */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium,
-                                                      ),
-                                                    ),
-                                                  Expanded(
-                                                    flex: 4,
-                                                    child: Padding(
-                                                      padding:
-                                                          const EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0.0,
-                                                                  8.0,
-                                                                  12.0,
-                                                                  8.0),
-                                                      child: Row(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        children: [
-                                                          Padding(
-                                                            padding:
-                                                                const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        8.0,
-                                                                        0.0),
-                                                            child: ClipRRect(
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          40.0),
-                                                              child:
-                                                                  Image.network(
-                                                                'https://images.unsplash.com/photo-1474176857210-7287d38d27c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHVzZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-                                                                width: 32.0,
-                                                                height: 32.0,
-                                                                fit: BoxFit
-                                                                    .cover,
-                                                              ),
-                                                            ),
-                                                          ),
-                                                          Expanded(
-                                                            child: Padding(
-                                                              padding:
-                                                                  const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          4.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                              child: Column(
-                                                                mainAxisSize:
-                                                                    MainAxisSize
-                                                                        .max,
-                                                                mainAxisAlignment:
-                                                                    MainAxisAlignment
-                                                                        .center,
-                                                                crossAxisAlignment:
-                                                                    CrossAxisAlignment
-                                                                        .start,
-                                                                children: [
-                                                                  Text(
-                                                                    FFLocalizations.of(
-                                                                            context)
-                                                                        .getText(
-                                                                      'az24y4wz' /* Randy Peterson */,
-                                                                    ),
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .override(
-                                                                          fontFamily:
-                                                                              'Inter',
-                                                                          fontWeight:
-                                                                              FontWeight.bold,
-                                                                        ),
-                                                                  ),
-                                                                  Padding(
-                                                                    padding: const EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            4.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                    child: Text(
-                                                                      FFLocalizations.of(
-                                                                              context)
-                                                                          .getText(
-                                                                        'e5m9b49j' /* Business Name */,
-                                                                      ),
-                                                                      style: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodySmall
-                                                                          .override(
-                                                                            fontFamily:
-                                                                                'Inter',
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primary,
-                                                                          ),
-                                                                    ),
-                                                                  ),
-                                                                ],
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  if (responsiveVisibility(
-                                                    context: context,
-                                                    phone: false,
-                                                  ))
-                                                    Expanded(
-                                                      flex: 2,
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          '6czt4nfl' /* $2,100 */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleLarge,
-                                                      ),
-                                                    ),
-                                                  Expanded(
-                                                    flex: 2,
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      children: [
-                                                        Container(
-                                                          height: 32.0,
-                                                          decoration:
-                                                              BoxDecoration(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .accent2,
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        40.0),
-                                                            border: Border.all(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .secondary,
-                                                            ),
-                                                          ),
-                                                          alignment:
-                                                              const AlignmentDirectional(
-                                                                  0.0, 0.0),
-                                                          child: Padding(
-                                                            padding:
-                                                                const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        12.0,
-                                                                        0.0,
-                                                                        12.0,
-                                                                        0.0),
-                                                            child: Text(
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                                'xqfo1e4j' /* Paid */,
-                                                              ),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium,
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                  Expanded(
-                                                    flex: 1,
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment.end,
-                                                      children: [
-                                                        FlutterFlowIconButton(
-                                                          borderColor: Colors
-                                                              .transparent,
-                                                          borderRadius: 30.0,
-                                                          borderWidth: 1.0,
-                                                          buttonSize: 44.0,
-                                                          icon: Icon(
-                                                            Icons.more_vert,
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .secondaryText,
-                                                            size: 20.0,
-                                                          ),
-                                                          onPressed: () {
-                                                            print(
-                                                                'IconButton pressed ...');
-                                                          },
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 1.0),
-                                          child: Container(
-                                            width: 100.0,
-                                            decoration: BoxDecoration(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
-                                              boxShadow: [
-                                                BoxShadow(
-                                                  blurRadius: 0.0,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryBackground,
-                                                  offset: const Offset(0.0, 1.0),
-                                                )
-                                              ],
-                                            ),
-                                            child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      16.0, 0.0, 16.0, 0.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                children: [
-                                                  if (responsiveVisibility(
-                                                    context: context,
-                                                    phone: false,
-                                                    tablet: false,
-                                                  ))
-                                                    Expanded(
-                                                      flex: 2,
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          'y3rq5jjb' /* Design Work */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium,
-                                                      ),
-                                                    ),
-                                                  Expanded(
-                                                    flex: 4,
-                                                    child: Padding(
-                                                      padding:
-                                                          const EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0.0,
-                                                                  8.0,
-                                                                  12.0,
-                                                                  8.0),
-                                                      child: Row(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        children: [
-                                                          Padding(
-                                                            padding:
-                                                                const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        8.0,
-                                                                        0.0),
-                                                            child: ClipRRect(
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          40.0),
-                                                              child:
-                                                                  Image.network(
-                                                                'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
-                                                                width: 32.0,
-                                                                height: 32.0,
-                                                                fit: BoxFit
-                                                                    .cover,
-                                                              ),
-                                                            ),
-                                                          ),
-                                                          Expanded(
-                                                            child: Padding(
-                                                              padding:
-                                                                  const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          4.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                              child: Column(
-                                                                mainAxisSize:
-                                                                    MainAxisSize
-                                                                        .max,
-                                                                mainAxisAlignment:
-                                                                    MainAxisAlignment
-                                                                        .center,
-                                                                crossAxisAlignment:
-                                                                    CrossAxisAlignment
-                                                                        .start,
-                                                                children: [
-                                                                  Text(
-                                                                    FFLocalizations.of(
-                                                                            context)
-                                                                        .getText(
-                                                                      '6lbzkqr4' /* Randy Peterson */,
-                                                                    ),
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .override(
-                                                                          fontFamily:
-                                                                              'Inter',
-                                                                          fontWeight:
-                                                                              FontWeight.bold,
-                                                                        ),
-                                                                  ),
-                                                                  Padding(
-                                                                    padding: const EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            4.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                    child: Text(
-                                                                      FFLocalizations.of(
-                                                                              context)
-                                                                          .getText(
-                                                                        'y1hlzsyz' /* Business Name */,
-                                                                      ),
-                                                                      style: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodySmall
-                                                                          .override(
-                                                                            fontFamily:
-                                                                                'Inter',
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primary,
-                                                                          ),
-                                                                    ),
-                                                                  ),
-                                                                ],
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  if (responsiveVisibility(
-                                                    context: context,
-                                                    phone: false,
-                                                  ))
-                                                    Expanded(
-                                                      flex: 2,
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          'x7aklacc' /* $2,100 */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleLarge,
-                                                      ),
-                                                    ),
-                                                  Expanded(
-                                                    flex: 2,
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      children: [
-                                                        Container(
-                                                          height: 32.0,
-                                                          decoration:
-                                                              BoxDecoration(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .primaryBackground,
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        40.0),
-                                                          ),
-                                                          alignment:
-                                                              const AlignmentDirectional(
-                                                                  0.0, 0.0),
-                                                          child: Padding(
-                                                            padding:
-                                                                const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        12.0,
-                                                                        0.0,
-                                                                        12.0,
-                                                                        0.0),
-                                                            child: Text(
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                                'vg93vcxy' /* Pending */,
-                                                              ),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium,
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                  Expanded(
-                                                    flex: 1,
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment.end,
-                                                      children: [
-                                                        FlutterFlowIconButton(
-                                                          borderColor: Colors
-                                                              .transparent,
-                                                          borderRadius: 30.0,
-                                                          borderWidth: 1.0,
-                                                          buttonSize: 44.0,
-                                                          icon: Icon(
-                                                            Icons.more_vert,
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .secondaryText,
-                                                            size: 20.0,
-                                                          ),
-                                                          onPressed: () {
-                                                            print(
-                                                                'IconButton pressed ...');
-                                                          },
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 1.0),
-                                          child: Container(
-                                            width: 100.0,
-                                            decoration: BoxDecoration(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
-                                              boxShadow: [
-                                                BoxShadow(
-                                                  blurRadius: 0.0,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryBackground,
-                                                  offset: const Offset(0.0, 1.0),
-                                                )
-                                              ],
-                                            ),
-                                            child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      16.0, 0.0, 16.0, 0.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                children: [
-                                                  if (responsiveVisibility(
-                                                    context: context,
-                                                    phone: false,
-                                                    tablet: false,
-                                                  ))
-                                                    Expanded(
-                                                      flex: 2,
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          '6a8abhcc' /* Design Work */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium,
-                                                      ),
-                                                    ),
-                                                  Expanded(
-                                                    flex: 4,
-                                                    child: Padding(
-                                                      padding:
-                                                          const EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0.0,
-                                                                  8.0,
-                                                                  12.0,
-                                                                  8.0),
-                                                      child: Row(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        children: [
-                                                          Padding(
-                                                            padding:
-                                                                const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        8.0,
-                                                                        0.0),
-                                                            child: ClipRRect(
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          40.0),
-                                                              child:
-                                                                  Image.network(
-                                                                'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
-                                                                width: 32.0,
-                                                                height: 32.0,
-                                                                fit: BoxFit
-                                                                    .cover,
-                                                              ),
-                                                            ),
-                                                          ),
-                                                          Expanded(
-                                                            child: Padding(
-                                                              padding:
-                                                                  const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          4.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                              child: Column(
-                                                                mainAxisSize:
-                                                                    MainAxisSize
-                                                                        .max,
-                                                                mainAxisAlignment:
-                                                                    MainAxisAlignment
-                                                                        .center,
-                                                                crossAxisAlignment:
-                                                                    CrossAxisAlignment
-                                                                        .start,
-                                                                children: [
-                                                                  Text(
-                                                                    FFLocalizations.of(
-                                                                            context)
-                                                                        .getText(
-                                                                      'x0s3b15l' /* Randy Peterson */,
-                                                                    ),
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .override(
-                                                                          fontFamily:
-                                                                              'Inter',
-                                                                          fontWeight:
-                                                                              FontWeight.bold,
-                                                                        ),
-                                                                  ),
-                                                                  Padding(
-                                                                    padding: const EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            4.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                    child: Text(
-                                                                      FFLocalizations.of(
-                                                                              context)
-                                                                          .getText(
-                                                                        't63s5h1v' /* Business Name */,
-                                                                      ),
-                                                                      style: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodySmall
-                                                                          .override(
-                                                                            fontFamily:
-                                                                                'Inter',
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primary,
-                                                                          ),
-                                                                    ),
-                                                                  ),
-                                                                ],
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  if (responsiveVisibility(
-                                                    context: context,
-                                                    phone: false,
-                                                  ))
-                                                    Expanded(
-                                                      flex: 2,
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          'rs8unktt' /* $2,100 */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleLarge,
-                                                      ),
-                                                    ),
-                                                  Expanded(
-                                                    flex: 2,
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      children: [
-                                                        Container(
-                                                          height: 32.0,
-                                                          decoration:
-                                                              BoxDecoration(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .primaryBackground,
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        40.0),
-                                                          ),
-                                                          alignment:
-                                                              const AlignmentDirectional(
-                                                                  0.0, 0.0),
-                                                          child: Padding(
-                                                            padding:
-                                                                const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        12.0,
-                                                                        0.0,
-                                                                        12.0,
-                                                                        0.0),
-                                                            child: Text(
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                                'f1lchs01' /* Pending */,
-                                                              ),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium,
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                  Expanded(
-                                                    flex: 1,
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment.end,
-                                                      children: [
-                                                        FlutterFlowIconButton(
-                                                          borderColor: Colors
-                                                              .transparent,
-                                                          borderRadius: 30.0,
-                                                          borderWidth: 1.0,
-                                                          buttonSize: 44.0,
-                                                          icon: Icon(
-                                                            Icons.more_vert,
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .secondaryText,
-                                                            size: 20.0,
-                                                          ),
-                                                          onPressed: () {
-                                                            print(
-                                                                'IconButton pressed ...');
-                                                          },
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 1.0),
-                                          child: Container(
-                                            width: 100.0,
-                                            decoration: BoxDecoration(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryBackground,
-                                              boxShadow: [
-                                                BoxShadow(
-                                                  blurRadius: 0.0,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryBackground,
-                                                  offset: const Offset(0.0, 1.0),
-                                                )
-                                              ],
-                                            ),
-                                            child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      16.0, 0.0, 16.0, 0.0),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                children: [
-                                                  if (responsiveVisibility(
-                                                    context: context,
-                                                    phone: false,
-                                                    tablet: false,
-                                                  ))
-                                                    Expanded(
-                                                      flex: 2,
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          'gf3s6cub' /* Design Work */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodyMedium,
-                                                      ),
-                                                    ),
-                                                  Expanded(
-                                                    flex: 4,
-                                                    child: Padding(
-                                                      padding:
-                                                          const EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0.0,
-                                                                  8.0,
-                                                                  12.0,
-                                                                  8.0),
-                                                      child: Row(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        children: [
-                                                          Padding(
-                                                            padding:
-                                                                const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        8.0,
-                                                                        0.0),
-                                                            child: ClipRRect(
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          40.0),
-                                                              child:
-                                                                  Image.network(
-                                                                'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
-                                                                width: 32.0,
-                                                                height: 32.0,
-                                                                fit: BoxFit
-                                                                    .cover,
-                                                              ),
-                                                            ),
-                                                          ),
-                                                          Expanded(
-                                                            child: Padding(
-                                                              padding:
-                                                                  const EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          4.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                              child: Column(
-                                                                mainAxisSize:
-                                                                    MainAxisSize
-                                                                        .max,
-                                                                mainAxisAlignment:
-                                                                    MainAxisAlignment
-                                                                        .center,
-                                                                crossAxisAlignment:
-                                                                    CrossAxisAlignment
-                                                                        .start,
-                                                                children: [
-                                                                  Text(
-                                                                    FFLocalizations.of(
-                                                                            context)
-                                                                        .getText(
-                                                                      '9azsfs1c' /* Randy Peterson */,
-                                                                    ),
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .override(
-                                                                          fontFamily:
-                                                                              'Inter',
-                                                                          fontWeight:
-                                                                              FontWeight.bold,
-                                                                        ),
-                                                                  ),
-                                                                  Padding(
-                                                                    padding: const EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            4.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                    child: Text(
-                                                                      FFLocalizations.of(
-                                                                              context)
-                                                                          .getText(
-                                                                        '7rga45qo' /* Business Name */,
-                                                                      ),
-                                                                      style: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodySmall
-                                                                          .override(
-                                                                            fontFamily:
-                                                                                'Inter',
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).primary,
-                                                                          ),
-                                                                    ),
-                                                                  ),
-                                                                ],
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  if (responsiveVisibility(
-                                                    context: context,
-                                                    phone: false,
-                                                  ))
-                                                    Expanded(
-                                                      flex: 2,
-                                                      child: Text(
-                                                        FFLocalizations.of(
-                                                                context)
-                                                            .getText(
-                                                          '895p15l5' /* $2,100 */,
-                                                        ),
-                                                        style:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleLarge,
-                                                      ),
-                                                    ),
-                                                  Expanded(
-                                                    flex: 2,
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      children: [
-                                                        Container(
-                                                          height: 32.0,
-                                                          decoration:
-                                                              BoxDecoration(
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .primaryBackground,
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        40.0),
-                                                          ),
-                                                          alignment:
-                                                              const AlignmentDirectional(
-                                                                  0.0, 0.0),
-                                                          child: Padding(
-                                                            padding:
-                                                                const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        12.0,
-                                                                        0.0,
-                                                                        12.0,
-                                                                        0.0),
-                                                            child: Text(
-                                                              FFLocalizations.of(
-                                                                      context)
-                                                                  .getText(
-                                                                'd9tesvur' /* Pending */,
-                                                              ),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium,
-                                                            ),
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                  Expanded(
-                                                    flex: 1,
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment.end,
-                                                      children: [
-                                                        FlutterFlowIconButton(
-                                                          borderColor: Colors
-                                                              .transparent,
-                                                          borderRadius: 30.0,
-                                                          borderWidth: 1.0,
-                                                          buttonSize: 44.0,
-                                                          icon: Icon(
-                                                            Icons.more_vert,
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .secondaryText,
-                                                            size: 20.0,
-                                                          ),
-                                                          onPressed: () {
-                                                            print(
-                                                                'IconButton pressed ...');
-                                                          },
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
                       ].addToEnd(const SizedBox(height: 24.0)),
                     ),
                   ),

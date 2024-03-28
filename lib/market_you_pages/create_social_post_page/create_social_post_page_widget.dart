@@ -991,16 +991,18 @@ class _CreateSocialPostPageWidgetState extends State<CreateSocialPostPageWidget>
                     ),
                     child: Padding(
                       padding: const EdgeInsets.all(2.0),
-                      child: Container(
-                        width: 40.0,
-                        height: 40.0,
-                        clipBehavior: Clip.antiAlias,
-                        decoration: const BoxDecoration(
-                          shape: BoxShape.circle,
-                        ),
-                        child: Image.network(
-                          'https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/bd297a54-27c5-43bf-889e-ee04ccf81e8b/therma-mens-full-zip-training-hoodie-DwfKtF.png',
-                          fit: BoxFit.cover,
+                      child: AuthUserStreamWidget(
+                        builder: (context) => Container(
+                          width: 40.0,
+                          height: 40.0,
+                          clipBehavior: Clip.antiAlias,
+                          decoration: const BoxDecoration(
+                            shape: BoxShape.circle,
+                          ),
+                          child: Image.network(
+                            currentUserPhoto,
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),
@@ -1013,17 +1015,11 @@ class _CreateSocialPostPageWidgetState extends State<CreateSocialPostPageWidget>
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          FFLocalizations.of(context).getText(
-                            'spt5xdfa' /* Andres Franchellis */,
+                        AuthUserStreamWidget(
+                          builder: (context) => Text(
+                            currentUserDisplayName,
+                            style: FlutterFlowTheme.of(context).titleLarge,
                           ),
-                          style: FlutterFlowTheme.of(context).titleLarge,
-                        ),
-                        Text(
-                          FFLocalizations.of(context).getText(
-                            'uhxxn8uq' /* @andresfrans */,
-                          ),
-                          style: FlutterFlowTheme.of(context).labelMedium,
                         ),
                       ],
                     ),
@@ -1049,7 +1045,7 @@ class _CreateSocialPostPageWidgetState extends State<CreateSocialPostPageWidget>
                   obscureText: false,
                   decoration: InputDecoration(
                     hintText: FFLocalizations.of(context).getText(
-                      'svspcggc' /* What's happening? */,
+                      'svspcggc' /* Last month, we embraced the #G... */,
                     ),
                     hintStyle: FlutterFlowTheme.of(context).labelLarge,
                     enabledBorder: UnderlineInputBorder(
@@ -1108,8 +1104,8 @@ class _CreateSocialPostPageWidgetState extends State<CreateSocialPostPageWidget>
               padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(8.0),
-                child: Image.network(
-                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/culture-wise-ldnp9w/assets/zcewpthxbm62/image_2024-03-16_222042683.png',
+                child: Image.asset(
+                  'assets/images/3c96f643-c68e-4c5a-8def-b9a9dac5ed28.jpg',
                   width: double.infinity,
                   height: 348.0,
                   fit: BoxFit.cover,

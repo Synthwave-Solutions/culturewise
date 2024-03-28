@@ -619,7 +619,7 @@ class _SigninPageWidgetState extends State<SigninPageWidget>
                                                     }
 
                                                     context.goNamedAuth(
-                                                        'homePage',
+                                                        'yearWrapupPageCopy',
                                                         context.mounted);
                                                   },
                                                   text: FFLocalizations.of(
@@ -741,7 +741,7 @@ class _SigninPageWidgetState extends State<SigninPageWidget>
                                                               }
 
                                                               context.goNamedAuth(
-                                                                  'homePage',
+                                                                  'yearWrapupPageCopy',
                                                                   context
                                                                       .mounted);
                                                             },
@@ -1131,7 +1131,7 @@ class _SigninPageWidgetState extends State<SigninPageWidget>
                                                     }
 
                                                     context.goNamedAuth(
-                                                        'homePage',
+                                                        'yearWrapupPageCopy',
                                                         context.mounted);
                                                   },
                                                   text: FFLocalizations.of(
@@ -1229,7 +1229,7 @@ class _SigninPageWidgetState extends State<SigninPageWidget>
                                                         }
 
                                                         context.goNamedAuth(
-                                                            'homePage',
+                                                            'yearWrapupPageCopy',
                                                             context.mounted);
                                                       },
                                                       text: FFLocalizations.of(
@@ -1316,7 +1316,7 @@ class _SigninPageWidgetState extends State<SigninPageWidget>
                                                     }
 
                                                     context.goNamedAuth(
-                                                        'homePage',
+                                                        'yearWrapupPageCopy',
                                                         context.mounted);
                                                   },
                                                   text: FFLocalizations.of(

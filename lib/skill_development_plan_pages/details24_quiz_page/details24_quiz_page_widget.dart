@@ -124,7 +124,7 @@ class _Details24QuizPageWidgetState extends State<Details24QuizPageWidget> {
                             16.0, 100.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'qg9a7caw' /* How is your mood? */,
+                            'qg9a7caw' /* I actively foster a culture of... */,
                           ),
                           style: FlutterFlowTheme.of(context).displaySmall,
                         ),
@@ -134,7 +134,7 @@ class _Details24QuizPageWidgetState extends State<Details24QuizPageWidget> {
                             const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'rxwhg9ag' /* On a scale of 1 - 3 how are yo... */,
+                            'rxwhg9ag' /* On a scale of 1 - 3 how much d... */,
                           ),
                           style: FlutterFlowTheme.of(context).labelLarge,
                         ),

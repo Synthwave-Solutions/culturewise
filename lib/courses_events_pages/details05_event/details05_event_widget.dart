@@ -91,7 +91,7 @@ class _Details05EventWidgetState extends State<Details05EventWidget> {
                                   0.0, 12.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  '3ti68de7' /* Ocean Viability */,
+                                  '3ti68de7' /* Leadership Mastery Retreat */,
                                 ),
                                 style:
                                     FlutterFlowTheme.of(context).headlineMedium,
@@ -118,8 +118,8 @@ class _Details05EventWidgetState extends State<Details05EventWidget> {
                                   padding: const EdgeInsets.all(2.0),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(10.0),
-                                    child: Image.network(
-                                      'https://picsum.photos/seed/747/600',
+                                    child: Image.asset(
+                                      'assets/images/DALLE_2024-03-26_19.12.56_-_A_tranquil_and_luxurious_mountain_resort_in_Aspen,_Colorado,_set_against_a_backdrop_of_lush_forests_and_the_Rocky_Mountains,_with_leaders_gathered_in_.webp',
                                       width: double.infinity,
                                       height: 230.0,
                                       fit: BoxFit.cover,
@@ -156,7 +156,7 @@ class _Details05EventWidgetState extends State<Details05EventWidget> {
                                     0.0, 8.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'g1vm36lf' /* Main  Center Stage */,
+                                    'g1vm36lf' /* Ardennen Retreat */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall,
@@ -174,7 +174,7 @@ class _Details05EventWidgetState extends State<Details05EventWidget> {
                                       0.0, 8.0, 0.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'emmbkw4i' /* By protecting and preserving o... */,
+                                      'emmbkw4i' /* Join us in the serene setting ... */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .labelMedium,
@@ -297,7 +297,7 @@ class _Details05EventWidgetState extends State<Details05EventWidget> {
                             16.0, 8.0, 0.0, 44.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'udlf5oeq' /* San Diego, CA 91911 */,
+                            'udlf5oeq' /* Ardennen, BE, 91911 */,
                           ),
                           style: FlutterFlowTheme.of(context).labelLarge,
                         ),

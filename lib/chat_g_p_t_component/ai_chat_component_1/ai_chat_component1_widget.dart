@@ -1,6 +1,6 @@
 import '/backend/api_requests/api_calls.dart';
-import '/culture_guru_flow/empty_list/empty_list_widget.dart';
-import '/culture_guru_flow/writing_indicator/writing_indicator_widget.dart';
+import '/chat_g_p_t_component/empty_list_1/empty_list1_widget.dart';
+import '/chat_g_p_t_component/writing_indicator_1/writing_indicator1_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -9,18 +9,18 @@ import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'ai_chat_component_model.dart';
-export 'ai_chat_component_model.dart';
+import 'ai_chat_component1_model.dart';
+export 'ai_chat_component1_model.dart';
 
-class AiChatComponentWidget extends StatefulWidget {
-  const AiChatComponentWidget({super.key});
+class AiChatComponent1Widget extends StatefulWidget {
+  const AiChatComponent1Widget({super.key});
 
   @override
-  State<AiChatComponentWidget> createState() => _AiChatComponentWidgetState();
+  State<AiChatComponent1Widget> createState() => _AiChatComponent1WidgetState();
 }
 
-class _AiChatComponentWidgetState extends State<AiChatComponentWidget> {
-  late AiChatComponentModel _model;
+class _AiChatComponent1WidgetState extends State<AiChatComponent1Widget> {
+  late AiChatComponent1Model _model;
 
   @override
   void setState(VoidCallback callback) {
@@ -31,7 +31,7 @@ class _AiChatComponentWidgetState extends State<AiChatComponentWidget> {
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => AiChatComponentModel());
+    _model = createModel(context, () => AiChatComponent1Model());
 
     _model.textController ??= TextEditingController();
     _model.textFieldFocusNode ??= FocusNode();
@@ -67,6 +67,16 @@ class _AiChatComponentWidgetState extends State<AiChatComponentWidget> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
+                    if (responsiveVisibility(
+                      context: context,
+                      phone: false,
+                      tablet: false,
+                    ))
+                      Container(
+                        width: 100.0,
+                        height: 24.0,
+                        decoration: const BoxDecoration(),
+                      ),
                     Expanded(
                       child: Padding(
                         padding: const EdgeInsetsDirectional.fromSTEB(
@@ -104,7 +114,7 @@ class _AiChatComponentWidgetState extends State<AiChatComponentWidget> {
                                           if (chat.isEmpty) {
                                             return const SizedBox(
                                               width: double.infinity,
-                                              child: EmptyListWidget(),
+                                              child: EmptyList1Widget(),
                                             );
                                           }
                                           return ListView.builder(
@@ -242,7 +252,7 @@ class _AiChatComponentWidgetState extends State<AiChatComponentWidget> {
                                                                   onTap:
                                                                       () async {
                                                                     logFirebaseEvent(
-                                                                        'AI_CHAT_COMPONENT_Container_y5sb4akb_ON_');
+                                                                        'AI_CHAT_COMPONENT_1_Container_1ynunodw_O');
                                                                     logFirebaseEvent(
                                                                         'Container_copy_to_clipboard');
                                                                     await Clipboard.setData(
@@ -317,7 +327,7 @@ class _AiChatComponentWidgetState extends State<AiChatComponentWidget> {
                                                                             child:
                                                                                 Text(
                                                                               FFLocalizations.of(context).getText(
-                                                                                'mt698ngo' /* Copy response */,
+                                                                                '5mjbsz6t' /* Copy response */,
                                                                               ),
                                                                               style: FlutterFlowTheme.of(context).labelSmall,
                                                                             ),
@@ -434,9 +444,9 @@ class _AiChatComponentWidgetState extends State<AiChatComponentWidget> {
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         wrapWithModel(
-                                          model: _model.writingIndicatorModel,
+                                          model: _model.writingIndicator1Model,
                                           updateCallback: () => setState(() {}),
-                                          child: const WritingIndicatorWidget(),
+                                          child: const WritingIndicator1Widget(),
                                         ),
                                       ],
                                     ),
@@ -478,7 +488,7 @@ class _AiChatComponentWidgetState extends State<AiChatComponentWidget> {
                         obscureText: false,
                         decoration: InputDecoration(
                           hintText: FFLocalizations.of(context).getText(
-                            '1jifzmx3' /* Type something... */,
+                            '5sow5xau' /* Type something... */,
                           ),
                           hintStyle: FlutterFlowTheme.of(context).labelLarge,
                           errorStyle:
@@ -542,7 +552,7 @@ class _AiChatComponentWidgetState extends State<AiChatComponentWidget> {
                         showLoadingIndicator: true,
                         onPressed: () async {
                           logFirebaseEvent(
-                              'AI_CHAT_COMPONENT_send_rounded_ICN_ON_TA');
+                              'AI_CHAT_COMPONENT_1_send_rounded_ICN_ON_');
                           // addToChat_aiTyping
                           logFirebaseEvent('IconButton_addToChat_aiTyping');
                           setState(() {
@@ -555,8 +565,9 @@ class _AiChatComponentWidgetState extends State<AiChatComponentWidget> {
                           // The "chatHistory" is the generated JSON -- we send the whole chat history to AI in order for it to understand context.
                           logFirebaseEvent('IconButton_backend_call');
                           _model.chatGPTResponse =
-                              await BecomeGreatAssistantCall.call(
-                            message: _model.textController.text,
+                              await OpenAIChatGPTGroup.sendFullPromptCall.call(
+                            apiKey: ' ',
+                            promptJson: _model.chatHistory,
                           );
                           if ((_model.chatGPTResponse?.succeeded ?? true)) {
                             logFirebaseEvent(
@@ -567,7 +578,7 @@ class _AiChatComponentWidgetState extends State<AiChatComponentWidget> {
                                   _model.chatHistory,
                                   getJsonField(
                                     (_model.chatGPTResponse?.jsonBody ?? ''),
-                                    r'''$.response''',
+                                    r'''$['choices'][0]['message']''',
                                   ));
                             });
                             logFirebaseEvent(
@@ -603,7 +614,7 @@ class _AiChatComponentWidgetState extends State<AiChatComponentWidget> {
 
                           logFirebaseEvent('IconButton_wait__delay');
                           await Future.delayed(
-                              const Duration(milliseconds: 2000));
+                              const Duration(milliseconds: 800));
                           logFirebaseEvent('IconButton_scroll_to');
                           await _model.listViewController?.animateTo(
                             _model.listViewController!.position.maxScrollExtent,

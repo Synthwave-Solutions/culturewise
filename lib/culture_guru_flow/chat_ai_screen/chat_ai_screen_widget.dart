@@ -139,7 +139,7 @@ class _ChatAiScreenWidgetState extends State<ChatAiScreenWidget>
                                       12.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'msxzse39' /* CultureWise */,
+                                      'msxzse39' /* BecomeGreat */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .headlineMedium
@@ -147,6 +147,7 @@ class _ChatAiScreenWidgetState extends State<ChatAiScreenWidget>
                                           fontFamily: 'Sora',
                                           color:
                                               FlutterFlowTheme.of(context).info,
+                                          fontSize: 30.0,
                                         ),
                                   ),
                                 ),
@@ -287,7 +288,7 @@ class _ChatAiScreenWidgetState extends State<ChatAiScreenWidget>
                                 'CHAT_AI_SCREEN_PAGE_Row_s8ev6i59_ON_TAP');
                             logFirebaseEvent('Row_navigate_to');
 
-                            context.pushNamed('homePage');
+                            context.pushNamed('yearWrapupPageCopy');
                           },
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -355,7 +356,7 @@ class _ChatAiScreenWidgetState extends State<ChatAiScreenWidget>
                                 'CHAT_AI_SCREEN_PAGE_Row_y4pskqod_ON_TAP');
                             logFirebaseEvent('Row_navigate_to');
 
-                            context.pushNamed('chat_ai_Screen');
+                            context.pushNamed('homePage');
                           },
                           child: Row(
                             mainAxisSize: MainAxisSize.max,

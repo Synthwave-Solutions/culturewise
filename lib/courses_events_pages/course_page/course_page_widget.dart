@@ -76,8 +76,8 @@ class _CoursePageWidgetState extends State<CoursePageWidget> {
               padding: const EdgeInsets.all(16.0),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(12.0),
-                child: Image.network(
-                  'https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8eW9nYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60',
+                child: Image.asset(
+                  'assets/images/DALLE_2024-03-26_19.21.24_-_A_serene_outdoor_setting_in_a_lush_garden_intended_for_a_mindfulness_and_leadership_meditation_course,_with_comfortable_seating_arranged_in_a_circle_a.webp',
                   width: MediaQuery.sizeOf(context).width * 1.0,
                   height: 230.0,
                   fit: BoxFit.cover,
@@ -92,7 +92,7 @@ class _CoursePageWidgetState extends State<CoursePageWidget> {
                 children: [
                   Text(
                     FFLocalizations.of(context).getText(
-                      'uk13kpz5' /* Class Name */,
+                      'uk13kpz5' /* Mindful Leadership Mastery */,
                     ),
                     style: FlutterFlowTheme.of(context).headlineMedium,
                   ),
@@ -110,7 +110,7 @@ class _CoursePageWidgetState extends State<CoursePageWidget> {
                   ),
                   Text(
                     FFLocalizations.of(context).getText(
-                      'xcm66dtt' /* The best of all 3 worlds, Row ... */,
+                      'xcm66dtt' /* This course is designed for le... */,
                     ),
                     style: FlutterFlowTheme.of(context).labelLarge,
                   ),
@@ -123,7 +123,7 @@ class _CoursePageWidgetState extends State<CoursePageWidget> {
                     padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                     child: Text(
                       FFLocalizations.of(context).getText(
-                        'oy5ehuqb' /* 30m | High Intensity | Indoor/... */,
+                        'oy5ehuqb' /* 60m | High Intensity | Indoor/... */,
                       ),
                       style: FlutterFlowTheme.of(context).labelMedium,
                     ),

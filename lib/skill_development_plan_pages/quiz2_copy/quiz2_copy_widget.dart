@@ -193,7 +193,7 @@ class _Quiz2CopyWidgetState extends State<Quiz2CopyWidget>
                             16.0, 100.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'pqx4b19q' /* How was your day? */,
+                            'pqx4b19q' /* I regularly acknowledge and ap... */,
                           ),
                           style: FlutterFlowTheme.of(context).displaySmall,
                         ).animateOnPageLoad(
@@ -204,7 +204,7 @@ class _Quiz2CopyWidgetState extends State<Quiz2CopyWidget>
                             const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'f76sqxw6' /* Did you experience anything ou... */,
+                            'f76sqxw6' /* On a scale from 1 - 5 how much... */,
                           ),
                           style: FlutterFlowTheme.of(context).labelLarge,
                         ).animateOnPageLoad(
@@ -233,19 +233,19 @@ class _Quiz2CopyWidgetState extends State<Quiz2CopyWidget>
                                     child: FlutterFlowCheckboxGroup(
                                       options: [
                                         FFLocalizations.of(context).getText(
-                                          'pa2gvluh' /* Incredible  😇 */,
+                                          'pa2gvluh' /* Strongly Agree  😇 */,
                                         ),
                                         FFLocalizations.of(context).getText(
-                                          '8cgjvb55' /* Great 😃 */,
+                                          '8cgjvb55' /* Agree 😃 */,
                                         ),
                                         FFLocalizations.of(context).getText(
-                                          'r0jecl0y' /* Good 🙂 */,
+                                          'r0jecl0y' /* Neutral 🙂 */,
                                         ),
                                         FFLocalizations.of(context).getText(
-                                          'g229ep0m' /* Okay 😕 */,
+                                          'g229ep0m' /* Disagree 😕 */,
                                         ),
                                         FFLocalizations.of(context).getText(
-                                          'b1e8lh9r' /* Really Bad 😞 */,
+                                          'b1e8lh9r' /* Strongly Disagree 😞 */,
                                         )
                                       ],
                                       onChanged: (val) => setState(() =>

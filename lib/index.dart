@@ -38,3 +38,7 @@ export '/scoreboard_pages/score_board_page/score_board_page_widget.dart'
     show ScoreBoardPageWidget;
 export '/skill_development_plan_pages/quiz2_copy/quiz2_copy_widget.dart'
     show Quiz2CopyWidget;
+export '/home_pages/year_wrapup_page_copy/year_wrapup_page_copy_widget.dart'
+    show YearWrapupPageCopyWidget;
+export '/chat_g_p_t_component/chat_ai_screen_1/chat_ai_screen1_widget.dart'
+    show ChatAiScreen1Widget;

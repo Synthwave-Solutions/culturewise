@@ -72,14 +72,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const HomePageWidget() : const SigninPageWidget(),
+      errorBuilder: (context, state) => appStateNotifier.loggedIn
+          ? const YearWrapupPageCopyWidget()
+          : const SigninPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) =>
-              appStateNotifier.loggedIn ? const HomePageWidget() : const SigninPageWidget(),
+          builder: (context, _) => appStateNotifier.loggedIn
+              ? const YearWrapupPageCopyWidget()
+              : const SigninPageWidget(),
         ),
         FFRoute(
           name: 'signinPage',
@@ -204,6 +206,17 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           path: '/pyquiz2Co',
           requireAuth: true,
           builder: (context, params) => const Quiz2CopyWidget(),
+        ),
+        FFRoute(
+          name: 'yearWrapupPageCopy',
+          path: '/yearWrapupPageCopy',
+          requireAuth: true,
+          builder: (context, params) => const YearWrapupPageCopyWidget(),
+        ),
+        FFRoute(
+          name: 'chat_ai_Screen_1',
+          path: '/chatAiScreen1',
+          builder: (context, params) => const ChatAiScreen1Widget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

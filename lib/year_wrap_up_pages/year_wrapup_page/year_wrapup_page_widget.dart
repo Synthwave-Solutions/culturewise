@@ -4,10 +4,10 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:simple_gradient_text/simple_gradient_text.dart';
 import 'year_wrapup_page_model.dart';
 export 'year_wrapup_page_model.dart';
 
@@ -128,7 +128,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                                       12.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      '5s33e3c5' /* CultureWise */,
+                                      '5s33e3c5' /* BecomeGreat */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .headlineMedium
@@ -136,6 +136,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                                           fontFamily: 'Sora',
                                           color:
                                               FlutterFlowTheme.of(context).info,
+                                          fontSize: 30.0,
                                         ),
                                   ),
                                 ),
@@ -275,7 +276,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                             logFirebaseEvent('YEAR_WRAPUP_Row_j4m9hs45_ON_TAP');
                             logFirebaseEvent('Row_navigate_to');
 
-                            context.pushNamed('homePage');
+                            context.pushNamed('yearWrapupPageCopy');
                           },
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -342,7 +343,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                             logFirebaseEvent('YEAR_WRAPUP_Row_6dgbfrah_ON_TAP');
                             logFirebaseEvent('Row_navigate_to');
 
-                            context.pushNamed('chat_ai_Screen');
+                            context.pushNamed('homePage');
                           },
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -1026,7 +1027,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                               0.0, 0.0, 0.0, 12.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'h3cd86py' /* 24k */,
+                              'h3cd86py' /* 206 */,
                             ),
                             textAlign: TextAlign.center,
                             style: FlutterFlowTheme.of(context)
@@ -1040,7 +1041,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                         ),
                         Text(
                           FFLocalizations.of(context).getText(
-                            'irqnwel1' /* Followers */,
+                            'irqnwel1' /* Milestones Achieved */,
                           ),
                           textAlign: TextAlign.center,
                           style:
@@ -1109,7 +1110,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                               0.0, 0.0, 0.0, 12.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'n42ubk6h' /* 152 */,
+                              'n42ubk6h' /* 13% */,
                             ),
                             textAlign: TextAlign.center,
                             style: FlutterFlowTheme.of(context)
@@ -1123,7 +1124,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                         ),
                         Text(
                           FFLocalizations.of(context).getText(
-                            'y7f5dmbu' /* Following */,
+                            'y7f5dmbu' /* Increase in survey results */,
                           ),
                           textAlign: TextAlign.center,
                           style:
@@ -1152,28 +1153,10 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 16.0, 0.0),
-                child: GradientText(
-                  currentUserEmail,
-                  style: FlutterFlowTheme.of(context).labelSmall.override(
-                        fontFamily: 'Inter',
-                        color: FlutterFlowTheme.of(context).secondary,
-                        fontSize: 14.0,
-                        fontWeight: FontWeight.w500,
-                      ),
-                  colors: [
-                    FlutterFlowTheme.of(context).tertiary,
-                    FlutterFlowTheme.of(context).tertiary
-                  ],
-                  gradientDirection: GradientDirection.ltr,
-                  gradientType: GradientType.linear,
-                ),
-              ),
-              Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 24.0, 0.0),
                 child: Text(
                   FFLocalizations.of(context).getText(
-                    'rth4bnls' /* I exist to design pixels, beyo... */,
+                    'rth4bnls' /* Your Year Of Becoming Great, W... */,
                   ),
                   textAlign: TextAlign.center,
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1215,29 +1198,27 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
-                                  FFLocalizations.of(context).getText(
-                                    'q6pihltu' /* My Stats */,
-                                  ),
-                                  style: FlutterFlowTheme.of(context)
-                                      .headlineMedium,
-                                ),
                                 Align(
                                   alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
                                     padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 16.0, 0.0, 0.0),
-                                    child: Wrap(
-                                      spacing: 16.0,
-                                      runSpacing: 16.0,
-                                      alignment: WrapAlignment.start,
-                                      crossAxisAlignment:
-                                          WrapCrossAlignment.start,
-                                      direction: Axis.horizontal,
-                                      runAlignment: WrapAlignment.start,
-                                      verticalDirection: VerticalDirection.down,
-                                      clipBehavior: Clip.none,
-                                      children: [
+                                        0.0, 0.0, 0.0, 15.0),
+                                    child: Text(
+                                      FFLocalizations.of(context).getText(
+                                        'q6pihltu' /* My Year */,
+                                      ),
+                                      style: FlutterFlowTheme.of(context)
+                                          .headlineMedium,
+                                    ),
+                                  ),
+                                ),
+                                Align(
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
+                                  child: SizedBox(
+                                    width: double.infinity,
+                                    height: 180.0,
+                                    child: CarouselSlider(
+                                      items: [
                                         Container(
                                           width:
                                               MediaQuery.sizeOf(context).width *
@@ -1256,9 +1237,8 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                                               mainAxisAlignment:
                                                   MainAxisAlignment.center,
                                               children: [
-                                                Icon(
-                                                  Icons
-                                                      .supervisor_account_rounded,
+                                                FaIcon(
+                                                  FontAwesomeIcons.save,
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primaryText,
@@ -1271,7 +1251,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      '0qmxpt6c' /* 56.4k */,
+                                                      '0qmxpt6c' /* 5.64k */,
                                                     ),
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
@@ -1282,7 +1262,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                                                 Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    'decwbq47' /* Customers */,
+                                                    'decwbq47' /* Employee Feedbacks Collected */,
                                                   ),
                                                   textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
@@ -1312,8 +1292,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                                                   MainAxisAlignment.center,
                                               children: [
                                                 Icon(
-                                                  Icons
-                                                      .supervisor_account_rounded,
+                                                  Icons.punch_clock_outlined,
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primaryText,
@@ -1326,7 +1305,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      'zroaq0zy' /* 56.4k */,
+                                                      'zroaq0zy' /* 3.21k */,
                                                     ),
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
@@ -1337,7 +1316,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                                                 Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    'f2mjwhka' /* Customers */,
+                                                    'f2mjwhka' /* Hours of Development Training */,
                                                   ),
                                                   textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
@@ -1367,8 +1346,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                                                   MainAxisAlignment.center,
                                               children: [
                                                 Icon(
-                                                  Icons
-                                                      .supervisor_account_rounded,
+                                                  Icons.pending_actions_sharp,
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primaryText,
@@ -1381,7 +1359,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      'uvhlfoia' /* 56.4k */,
+                                                      'uvhlfoia' /* 211 */,
                                                     ),
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
@@ -1392,7 +1370,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                                                 Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    'ochhz9oa' /* Customers */,
+                                                    'ochhz9oa' /* Positive Culture Actions Logge... */,
                                                   ),
                                                   textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
@@ -1421,9 +1399,8 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                                               mainAxisAlignment:
                                                   MainAxisAlignment.center,
                                               children: [
-                                                Icon(
-                                                  Icons
-                                                      .supervisor_account_rounded,
+                                                FaIcon(
+                                                  FontAwesomeIcons.handRock,
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primaryText,
@@ -1436,7 +1413,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      '1bpc71t8' /* 56.4k */,
+                                                      '1bpc71t8' /* 178 */,
                                                     ),
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
@@ -1447,7 +1424,7 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                                                 Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    'tlcmpm79' /* Customers */,
+                                                    'tlcmpm79' /* Leadership Milestones Set */,
                                                   ),
                                                   textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
@@ -1459,6 +1436,40 @@ class _YearWrapupPageWidgetState extends State<YearWrapupPageWidget>
                                           ),
                                         ),
                                       ],
+                                      carouselController:
+                                          _model.carouselController ??=
+                                              CarouselController(),
+                                      options: CarouselOptions(
+                                        initialPage: 1,
+                                        viewportFraction: 0.5,
+                                        disableCenter: true,
+                                        enlargeCenterPage: true,
+                                        enlargeFactor: 0.25,
+                                        enableInfiniteScroll: true,
+                                        scrollDirection: Axis.horizontal,
+                                        autoPlay: false,
+                                        onPageChanged: (index, _) =>
+                                            _model.carouselCurrentIndex = index,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                const Align(
+                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  child: Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 16.0, 0.0, 0.0),
+                                    child: Wrap(
+                                      spacing: 16.0,
+                                      runSpacing: 16.0,
+                                      alignment: WrapAlignment.start,
+                                      crossAxisAlignment:
+                                          WrapCrossAlignment.start,
+                                      direction: Axis.horizontal,
+                                      runAlignment: WrapAlignment.start,
+                                      verticalDirection: VerticalDirection.down,
+                                      clipBehavior: Clip.none,
+                                      children: [],
                                     ),
                                   ),
                                 ),

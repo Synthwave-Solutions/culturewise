@@ -1,16 +1,12 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'year_wrapup_page_widget.dart' show YearWrapupPageWidget;
-import 'package:carousel_slider/carousel_slider.dart';
+import 'year_wrapup_page_copy_widget.dart' show YearWrapupPageCopyWidget;
 import 'package:flutter/material.dart';
 
-class YearWrapupPageModel extends FlutterFlowModel<YearWrapupPageWidget> {
+class YearWrapupPageCopyModel
+    extends FlutterFlowModel<YearWrapupPageCopyWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
-  // State field(s) for Carousel widget.
-  CarouselController? carouselController;
-
-  int carouselCurrentIndex = 1;
 
   /// Initialization and disposal methods.
 
